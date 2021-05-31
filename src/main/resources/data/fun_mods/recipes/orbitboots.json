@@ -1,0 +1,26 @@
+{
+  "group": "fun_mods",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "fun_mods:orbitignot"
+    },
+    "2": {
+      "item": "fun_mods:orbitignot"
+    },
+    "3": {
+      "item": "fun_mods:orbitignot"
+    },
+    "5": {
+      "item": "fun_mods:orbitignot"
+    }
+  },
+  "result": {
+    "item": "fun_mods:orbit_boots",
+    "count": 1
+  }
+}

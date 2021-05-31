@@ -1,0 +1,24 @@
+{
+  "group": "fun_mods",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "fun_mods:orbitignot"
+    },
+    "1": {
+      "item": "fun_mods:orbitignot"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "fun_mods:orbitsword",
+    "count": 1
+  }
+}

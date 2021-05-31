@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fun_mods:blocks/obritore",
+    "up": "fun_mods:blocks/obritore",
+    "north": "fun_mods:blocks/obritore",
+    "east": "fun_mods:blocks/obritore",
+    "south": "fun_mods:blocks/obritore",
+    "west": "fun_mods:blocks/obritore",
+    "particle": "fun_mods:blocks/obritore"
+  }
+}

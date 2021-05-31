@@ -1,0 +1,42 @@
+{
+  "group": "fun_mods",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "fun_mods:greendiamond"
+    },
+    "1": {
+      "item": "fun_mods:greendiamond"
+    },
+    "2": {
+      "item": "fun_mods:greendiamond"
+    },
+    "3": {
+      "item": "minecraft:diamond"
+    },
+    "4": {
+      "item": "fun_mods:reddiamond"
+    },
+    "5": {
+      "item": "minecraft:diamond"
+    },
+    "6": {
+      "item": "fun_mods:reddiamond"
+    },
+    "7": {
+      "item": "minecraft:diamond"
+    },
+    "8": {
+      "item": "fun_mods:reddiamond"
+    }
+  },
+  "result": {
+    "item": "fun_mods:rainboxingot",
+    "count": 1
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "group": "fun_mods",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "fun_mods:orbitignot"
+    },
+    "2": {
+      "item": "fun_mods:orbitignot"
+    },
+    "3": {
+      "item": "fun_mods:orbitignot"
+    },
+    "4": {
+      "item": "fun_mods:orbitignot"
+    },
+    "5": {
+      "item": "fun_mods:orbitignot"
+    },
+    "6": {
+      "item": "fun_mods:orbitignot"
+    },
+    "7": {
+      "item": "fun_mods:orbitignot"
+    },
+    "8": {
+      "item": "fun_mods:orbitignot"
+    }
+  },
+  "result": {
+    "item": "fun_mods:orbit_chestplate",
+    "count": 1
+  }
+}

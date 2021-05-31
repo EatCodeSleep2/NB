@@ -1,0 +1,19 @@
+{
+  "group": "fun_mods",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:honeycomb"
+    },
+    "1": {
+      "item": "minecraft:porkchop"
+    }
+  },
+  "result": {
+    "item": "fun_mods:rawbacon",
+    "count": 2
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "fun_mods:items/raw_orbit"
+  }
+}

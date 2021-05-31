@@ -1,0 +1,310 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Glasstrabdoor",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glasstrabdoor"
+    },
+    {
+      "name": "Orbit",
+      "type": "armor",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbit",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Orbitignot",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbitignot"
+    },
+    {
+      "name": "Orbithelmet",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbithelmet"
+    },
+    {
+      "name": "Orbitchestplate",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbitchestplate"
+    },
+    {
+      "name": "Orbitlegging",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbitlegging"
+    },
+    {
+      "name": "Orbitboots",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbitboots"
+    },
+    {
+      "name": "Rainboxingot",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rainboxingot"
+    },
+    {
+      "name": "FunMods",
+      "type": "tab",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fun_mods"
+    },
+    {
+      "name": "Bacon",
+      "type": "food",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bacon"
+    },
+    {
+      "name": "Bacons",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bacons"
+    },
+    {
+      "name": "Rawbacon",
+      "type": "food",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rawbacon"
+    },
+    {
+      "name": "Greendiamond",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "greendiamond"
+    },
+    {
+      "name": "Reddiamond",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reddiamond"
+    },
+    {
+      "name": "Rainbowingot",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rainbowingot"
+    },
+    {
+      "name": "Orbitsword",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbitsword"
+    },
+    {
+      "name": "Orbitswords",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbitswords"
+    },
+    {
+      "name": "Orbitpickaxe",
+      "type": "tool",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbitpickaxe"
+    },
+    {
+      "name": "Obritpickaxe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "obritpickaxe"
+    },
+    {
+      "name": "Invisible",
+      "type": "armor",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "invisible",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Orbitblock",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbitblock"
+    },
+    {
+      "name": "Obirtblocks",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "obirtblocks"
+    },
+    {
+      "name": "Raworbit",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raworbit"
+    },
+    {
+      "name": "Orbitorawore",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbitorawore"
+    },
+    {
+      "name": "Rawbacons",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rawbacons"
+    },
+    {
+      "name": "Orbitore",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbitore"
+    },
+    {
+      "name": "Wither",
+      "type": "enchantment",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wither"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.fun_mods.greendiamond": "Greendiamond",
+      "item.fun_mods.rainboxingot": "Rainboxingot",
+      "item.fun_mods.bacon": "Bacon",
+      "item.fun_mods.invisible_chestplate": "Invisible Body",
+      "item.fun_mods.raworbit": "Raworbit",
+      "item.fun_mods.orbit_leggings": "Orbit Leggings",
+      "item.fun_mods.orbitpickaxe": "Orbit_pickaxe",
+      "item.fun_mods.orbitignot": "Orbit_ignot",
+      "block.fun_mods.glasstrabdoor": "Glasstrabdoor",
+      "block.fun_mods.orbitblock": "Block of Orbit",
+      "item.fun_mods.invisible_helmet": "Invisible Helmet",
+      "block.fun_mods.orbitore": "Orbitore",
+      "item.fun_mods.orbitsword": "Orbitswords",
+      "item.fun_mods.invisible_leggings": "Invisible Leggings",
+      "item.fun_mods.invisible_boots": "Invisible Boots",
+      "item.fun_mods.orbit_chestplate": "Orbit Body",
+      "item.fun_mods.rawbacon": "Raw bacon",
+      "itemGroup.tabfun_mods": "Fun Mods",
+      "item.fun_mods.orbit_boots": "Orbit Boots",
+      "item.fun_mods.reddiamond": "Reddiamond",
+      "item.fun_mods.orbit_helmet": "Orbit Helmet",
+      "enchantment.fun_mods.wither": "Wither"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "fun_mods",
+    "modName": "Fun mods",
+    "version": "1.0.0",
+    "author": "Tony, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.funmods",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}
