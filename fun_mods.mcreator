@@ -257,15 +257,6 @@
       "registry_name": "wither"
     },
     {
-      "name": "Pear",
-      "type": "item",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pear"
-    },
-    {
       "name": "Savannahdesert",
       "type": "biome",
       "sortid": 26,
@@ -273,6 +264,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "savannahdesert"
+    },
+    {
+      "name": "Pear",
+      "type": "food",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pear"
+    },
+    {
+      "name": "Savannahleaves",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "savannahleaves"
     }
   ],
   "variable_elements": [],
@@ -282,8 +291,8 @@
       "item.fun_mods.greendiamond": "Greendiamond",
       "item.fun_mods.bacon": "Bacon",
       "item.fun_mods.orbit_leggings": "Orbit Leggings",
-      "block.fun_mods.orbitblock": "Block of Orbit",
       "block.fun_mods.glasstrabdoor": "Glasstrabdoor",
+      "block.fun_mods.orbitblock": "Block of Orbit",
       "item.fun_mods.invisible_helmet": "Invisible Helmet",
       "item.fun_mods.pear": "Pear",
       "item.fun_mods.orbit_chestplate": "Orbit Body",
@@ -294,6 +303,7 @@
       "item.fun_mods.invisible_chestplate": "Invisible Body",
       "item.fun_mods.raworbit": "Raworbit",
       "item.fun_mods.orbitpickaxe": "Orbit_pickaxe",
+      "block.fun_mods.savannahleaves": "Savannahleaves",
       "item.fun_mods.orbitignot": "Orbit_ignot",
       "block.fun_mods.orbitore": "Orbitore",
       "item.fun_mods.orbitsword": "Orbitswords",

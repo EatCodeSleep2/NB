@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fun_mods:blocks/savannahleaves",
+    "up": "fun_mods:blocks/savannahleaves",
+    "north": "fun_mods:blocks/savannahleaves",
+    "east": "fun_mods:blocks/savannahleaves",
+    "south": "fun_mods:blocks/savannahleaves",
+    "west": "fun_mods:blocks/savannahleaves",
+    "particle": "fun_mods:blocks/savannahleaves"
+  }
+}
