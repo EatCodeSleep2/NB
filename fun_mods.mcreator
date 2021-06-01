@@ -284,15 +284,6 @@
       "registry_name": "savannahleaves"
     },
     {
-      "name": "Rainbowsword",
-      "type": "item",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rainbowsword"
-    },
-    {
       "name": "Rainbowswordrecipe",
       "type": "recipe",
       "sortid": 30,
@@ -300,6 +291,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "rainbowswordrecipe"
+    },
+    {
+      "name": "Reddiamondore",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reddiamondore"
     },
     {
       "name": "Greendiamondore",
@@ -311,13 +311,22 @@
       "registry_name": "greendiamondore"
     },
     {
-      "name": "Reddiamondore",
-      "type": "block",
-      "sortid": 32,
+      "name": "Rainbowsword",
+      "type": "item",
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "reddiamondore"
+      "registry_name": "rainbowsword"
+    },
+    {
+      "name": "PearDrop",
+      "type": "loottable",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pear_drop"
     }
   ],
   "variable_elements": [],
