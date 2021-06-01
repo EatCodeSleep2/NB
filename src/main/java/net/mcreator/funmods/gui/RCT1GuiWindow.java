@@ -70,7 +70,7 @@ public class RCT1GuiWindow extends ContainerScreen<RCT1Gui.GuiContainerMod> {
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "Tier 1", 1, 3, -12829636);
+		this.font.drawString(ms, "Tier 1", 4, 5, -12829636);
 		this.font.drawString(ms, "Build Rocket?", 6, 18, -12829636);
 	}
 
