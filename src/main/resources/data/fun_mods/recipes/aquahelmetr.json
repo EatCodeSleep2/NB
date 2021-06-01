@@ -1,0 +1,29 @@
+{
+  "group": "fun_mods",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "fun_mods:deleted_mod_element"
+    },
+    "1": {
+      "item": "fun_mods:deleted_mod_element"
+    },
+    "2": {
+      "item": "fun_mods:deleted_mod_element"
+    },
+    "3": {
+      "item": "fun_mods:deleted_mod_element"
+    },
+    "5": {
+      "item": "fun_mods:deleted_mod_element"
+    }
+  },
+  "result": {
+    "item": "fun_mods:scubagear_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fun_mods:blocks/aquaore",
+    "up": "fun_mods:blocks/aquaore",
+    "north": "fun_mods:blocks/aquaore",
+    "east": "fun_mods:blocks/aquaore",
+    "south": "fun_mods:blocks/aquaore",
+    "west": "fun_mods:blocks/aquaore",
+    "particle": "fun_mods:blocks/aquaore"
+  }
+}

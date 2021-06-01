@@ -101,7 +101,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "CUSTOM:OrbitDim"
+    ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -109,8 +111,8 @@
       }
     ],
     "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "frequencyOnChunk": 4,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 20
   }
 }
