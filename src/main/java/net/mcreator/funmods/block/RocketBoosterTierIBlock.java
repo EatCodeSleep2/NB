@@ -8,6 +8,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
@@ -62,7 +63,9 @@ public class RocketBoosterTierIBlock extends FunModsModElements.ModElement {
 
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
-			return VoxelShapes.empty();
+			Vector3d offset = state.getOffset(world, pos);
+			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 4, 16), makeCuboidShape(0, 5, 0, 10, 8, 10), makeCuboidShape(0, 9, 0, 16, 16, 16))
+					.withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override
