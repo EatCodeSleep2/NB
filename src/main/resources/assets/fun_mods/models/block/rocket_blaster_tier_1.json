@@ -1,0 +1,9 @@
+{
+  "parent": "fun_mods:custom/rbt1",
+  "textures": {
+    "all": "fun_mods:blocks/iron_block",
+    "particle": "fun_mods:blocks/iron_block",
+    "hardened_clay_stained_cyan": "fun_mods:blocks/hardened_clay_stained_cyan",
+    "iron_block": "fun_mods:blocks/iron_block"
+  }
+}

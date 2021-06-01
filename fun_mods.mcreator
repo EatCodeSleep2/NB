@@ -348,6 +348,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "rocket_control_t_1"
+    },
+    {
+      "name": "RocketBlasterTier1",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_blaster_tier_1"
     }
   ],
   "variable_elements": [],
@@ -357,8 +366,8 @@
       "item.fun_mods.greendiamond": "Green Diamond",
       "item.fun_mods.bacon": "Bacon",
       "item.fun_mods.orbit_leggings": "Orbit Leggings",
-      "block.fun_mods.orbitblock": "Block of Orbit",
       "block.fun_mods.glasstrabdoor": "Glass trabdoor",
+      "block.fun_mods.orbitblock": "Block of Orbit",
       "item.fun_mods.invisible_helmet": "Invisible Helmet",
       "item.fun_mods.pear": "Pear",
       "item.fun_mods.orbit_chestplate": "Orbit Body",
@@ -383,7 +392,8 @@
       "item.fun_mods.rawbacon": "Raw bacon",
       "itemGroup.tabfun_mods": "Fun Mods",
       "item.fun_mods.orbit_boots": "Orbit Boots",
-      "item.fun_mods.orbit_helmet": "Orbit Helmet"
+      "item.fun_mods.orbit_helmet": "Orbit Helmet",
+      "block.fun_mods.rocket_blaster_tier_1": "Rocket Blaster Tier 1"
     }
   },
   "foldersRoot": {
