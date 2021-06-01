@@ -336,6 +336,27 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "orbitapple"
+    },
+    {
+      "name": "RocketControlT1",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_control_t_1"
+    },
+    {
+      "name": "OrbitDim",
+      "type": "dimension",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbit_dim",
+      "metadata": {
+        "ep": false
+      }
     }
   ],
   "variable_elements": [],
@@ -345,10 +366,9 @@
       "item.fun_mods.greendiamond": "Green Diamond",
       "item.fun_mods.bacon": "Bacon",
       "item.fun_mods.orbit_leggings": "Orbit Leggings",
-      "block.fun_mods.orbitblock": "Block of Orbit",
       "block.fun_mods.glasstrabdoor": "Glass trabdoor",
+      "block.fun_mods.orbitblock": "Block of Orbit",
       "item.fun_mods.invisible_helmet": "Invisible Helmet",
-      "item.fun_mods.orbitapple": "Orbit Apple",
       "item.fun_mods.pear": "Pear",
       "item.fun_mods.orbit_chestplate": "Orbit Body",
       "item.fun_mods.reddiamond": "Red Diamond",
