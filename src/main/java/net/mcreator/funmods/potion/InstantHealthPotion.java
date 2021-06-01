@@ -50,7 +50,7 @@ public class InstantHealthPotion extends FunModsModElements.ModElement {
 	public static class EffectCustom extends Effect {
 		private final ResourceLocation potionIcon;
 		public EffectCustom() {
-			super(EffectType.NEUTRAL, -10079488);
+			super(EffectType.BENEFICIAL, -10079488);
 			setRegistryName("instant_health");
 			potionIcon = new ResourceLocation("fun_mods:textures/hungr.png");
 		}
@@ -62,7 +62,7 @@ public class InstantHealthPotion extends FunModsModElements.ModElement {
 
 		@Override
 		public boolean isBeneficial() {
-			return false;
+			return true;
 		}
 
 		@Override
