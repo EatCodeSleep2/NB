@@ -1,5 +1,5 @@
 {
-  "parent": "fun_mods:block/rocket_control_t_1",
+  "parent": "fun_mods:block/rocket_controller_tier_i",
   "display": {
     "thirdperson": {
       "rotation": [

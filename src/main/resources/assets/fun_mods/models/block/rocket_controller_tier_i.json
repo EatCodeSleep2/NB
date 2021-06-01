@@ -2,7 +2,7 @@
   "parent": "block/cube",
   "textures": {
     "down": "fun_mods:blocks/rct1s",
-    "up": "fun_mods:blocks/rct1s",
+    "up": "fun_mods:blocks/rct1ss",
     "north": "fun_mods:blocks/rct1f",
     "east": "fun_mods:blocks/rct1ss",
     "south": "fun_mods:blocks/rct1ss",
