@@ -2,15 +2,13 @@
   "item.fun_mods.greendiamond": "Green Diamond",
   "item.fun_mods.bacon": "Bacon",
   "item.fun_mods.orbit_leggings": "Orbit Leggings",
-  "block.fun_mods.glasstrabdoor": "Glass trabdoor",
   "block.fun_mods.orbitblock": "Block of Orbit",
+  "block.fun_mods.glasstrabdoor": "Glass trabdoor",
   "item.fun_mods.invisible_helmet": "Invisible Helmet",
   "item.fun_mods.pear": "Pear",
   "item.fun_mods.orbit_chestplate": "Orbit Body",
   "item.fun_mods.reddiamond": "Red Diamond",
   "enchantment.fun_mods.wither": "Wither",
-  "item.fun_mods.orbit_dim": "Orbit Dim Portal Igniter",
-  "block.fun_mods.rocket_control_t_1": "Rocket Control T 1",
   "biome.fun_mods.savannahdesert": "Savannahdesert",
   "block.fun_mods.greendiamondore": "Green Diamond Ore",
   "item.fun_mods.rainboxingot": "Rainboxingot",
@@ -28,6 +26,5 @@
   "item.fun_mods.rawbacon": "Raw bacon",
   "itemGroup.tabfun_mods": "Fun Mods",
   "item.fun_mods.orbit_boots": "Orbit Boots",
-  "item.fun_mods.orbit_helmet": "Orbit Helmet",
-  "block.fun_mods.rocket_blaster_tier_1": "Rocket Blaster Tier 1"
+  "item.fun_mods.orbit_helmet": "Orbit Helmet"
 }
