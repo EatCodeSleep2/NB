@@ -432,6 +432,27 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "rocket_booster_tier_i"
+    },
+    {
+      "name": "WitheP",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "withe_p",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
