@@ -538,13 +538,13 @@
       "registry_name": "scubatank"
     },
     {
-      "name": "InstantHealthPotionStartedapplied",
+      "name": "InstantHealthOnPotionActiveTick",
       "type": "procedure",
-      "sortid": 46,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "instant_health_potion_startedapplied",
+      "registry_name": "instant_health_on_potion_active_tick",
       "metadata": {
         "dependencies": [
           {
@@ -553,26 +553,39 @@
           }
         ]
       }
+    },
+    {
+      "name": "InstantHealth",
+      "type": "potion",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "instant_health"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.minecraft.potion.effect.instant_health": " Potion of Instant Hunger",
       "item.fun_mods.greendiamond": "Green Diamond",
       "item.fun_mods.bacon": "Bacon",
       "item.fun_mods.aquaingot": "Aqua ingot",
       "item.fun_mods.orbit_leggings": "Orbit Leggings",
+      "item.minecraft.tipped_arrow.effect.instant_health": "Arrow of  Potion of Instant Hunger",
       "block.fun_mods.orbitblock": "Block of Orbit",
       "block.fun_mods.glasstrabdoor": "Glass trabdoor",
       "item.fun_mods.invisible_helmet": "Invisible Helmet",
       "block.fun_mods.rocket_controller_tier_i": "Rocket Controller Tier 1",
       "item.fun_mods.pear": "Pear",
       "block.fun_mods.aquaore": "Aqua Ore",
+      "item.minecraft.lingering_potion.effect.instant_health": "Lingering  Potion of Instant Hunger",
       "item.fun_mods.orbit_chestplate": "Orbit Body",
       "item.fun_mods.rawaqua": "Raw aqua",
       "item.fun_mods.reddiamond": "Red Diamond",
       "enchantment.fun_mods.wither": "Wither",
+      "effect.instant_health": " Potion of Instant Hunger",
       "biome.fun_mods.savannahdesert": "Savannahdesert",
       "block.fun_mods.greendiamondore": "Green Diamond Ore",
       "item.fun_mods.rainboxingot": "Rainboxingot",
@@ -586,6 +599,7 @@
       "block.fun_mods.orbitore": "Orbit Ore",
       "item.fun_mods.orbitsword": "Orbit Sword",
       "item.fun_mods.invisible_leggings": "Invisible Leggings",
+      "item.minecraft.splash_potion.effect.instant_health": "Splash  Potion of Instant Hunger",
       "item.fun_mods.invisible_boots": "Invisible Boots",
       "block.fun_mods.reddiamondore": "Red Diamond Ore",
       "item.fun_mods.rawbacon": "Raw bacon",
