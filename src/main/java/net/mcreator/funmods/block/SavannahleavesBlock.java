@@ -3,15 +3,22 @@ package net.mcreator.funmods.block;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.loot.LootContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.funmods.itemgroup.FunModsItemGroup;
+import net.mcreator.funmods.item.PearItem;
 import net.mcreator.funmods.FunModsModElements;
+
+import java.util.List;
+import java.util.Collections;
 
 @FunModsModElements.ModElement.Tag
 public class SavannahleavesBlock extends FunModsModElements.ModElement {
@@ -28,13 +35,21 @@ public class SavannahleavesBlock extends FunModsModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
+			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(1f, 0f).setLightLevel(s -> 0));
 			setRegistryName("savannahleaves");
 		}
 
 		@Override
 		public MaterialColor getMaterialColor() {
 			return MaterialColor.GRASS;
+		}
+
+		@Override
+		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
+			if (!dropsOriginal.isEmpty())
+				return dropsOriginal;
+			return Collections.singletonList(new ItemStack(PearItem.block, (int) (0)));
 		}
 	}
 }

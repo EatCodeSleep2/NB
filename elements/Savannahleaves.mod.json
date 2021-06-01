@@ -35,7 +35,7 @@
     "name": "Savannah Leaves",
     "specialInfo": [],
     "hardness": 1.0,
-    "resistance": 10.0,
+    "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -46,7 +46,7 @@
       "value": "CUSTOM:Pear"
     },
     "dropAmount": 0,
-    "useLootTableForDrops": true,
+    "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
