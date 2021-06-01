@@ -327,6 +327,27 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "pear_drop"
+    },
+    {
+      "name": "OrbitDim",
+      "type": "dimension",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbit_dim",
+      "metadata": {
+        "ep": false
+      }
+    },
+    {
+      "name": "RocketControlT1",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_control_t_1"
     }
   ],
   "variable_elements": [],
@@ -343,6 +364,8 @@
       "item.fun_mods.orbit_chestplate": "Orbit Body",
       "item.fun_mods.reddiamond": "Reddiamond",
       "enchantment.fun_mods.wither": "Wither",
+      "item.fun_mods.orbit_dim": "Orbit Dim Portal Igniter",
+      "block.fun_mods.rocket_control_t_1": "Rocket Control T 1",
       "biome.fun_mods.savannahdesert": "Savannahdesert",
       "block.fun_mods.greendiamondore": "Greendiamondore",
       "item.fun_mods.rainboxingot": "Rainboxingot",
