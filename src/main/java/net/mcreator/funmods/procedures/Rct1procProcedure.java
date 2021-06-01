@@ -9,6 +9,7 @@ import net.minecraft.util.math.vector.Vector2f;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
+import net.minecraft.block.Blocks;
 
 import net.mcreator.funmods.block.RocketBoosterTierIBlock;
 import net.mcreator.funmods.FunModsModElements;
@@ -55,10 +56,24 @@ public class Rct1procProcedure extends FunModsModElements.ModElement {
 				.getDefaultState().getBlock())
 				&& ((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z - 1)))).getBlock() == RocketBoosterTierIBlock.block
 						.getDefaultState().getBlock()))
-				&& (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z + 1)))).getBlock() == RocketBoosterTierIBlock.block
+				&& ((((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z + 1)))).getBlock() == RocketBoosterTierIBlock.block
 						.getDefaultState().getBlock())
 						&& ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z - 1)))).getBlock() == RocketBoosterTierIBlock.block
-								.getDefaultState().getBlock())))) {
+								.getDefaultState().getBlock()))
+						&& (((world.getBlockState(new BlockPos((int) (x + 1), (int) (1 + y), (int) (z + 0)))).getBlock() == Blocks.IRON_BLOCK
+								.getDefaultState().getBlock())
+								&& ((((world.getBlockState(new BlockPos((int) (x + 1), (int) (1 + y), (int) (z + 1)))).getBlock() == Blocks.IRON_BLOCK
+										.getDefaultState().getBlock())
+										&& ((world.getBlockState(new BlockPos((int) (x + 2), (int) (1 + y), (int) (z + 1))))
+												.getBlock() == Blocks.IRON_BLOCK.getDefaultState().getBlock()))
+										&& (((world.getBlockState(new BlockPos((int) (x + 1), (int) (1 + y), (int) (z + 2))))
+												.getBlock() == Blocks.IRON_BLOCK.getDefaultState().getBlock())
+												&& ((((world.getBlockState(new BlockPos((int) (x + 2), (int) (1 + y), (int) (z + 2))))
+														.getBlock() == Blocks.IRON_BLOCK.getDefaultState().getBlock())
+														&& ((world.getBlockState(new BlockPos((int) (x + 3), (int) (1 + y), (int) (z + 2))))
+																.getBlock() == Blocks.IRON_BLOCK.getDefaultState().getBlock()))
+														&& ((world.getBlockState(new BlockPos((int) (x + 2), (int) (1 + y), (int) (z + 3))))
+																.getBlock() == Blocks.IRON_BLOCK.getDefaultState().getBlock())))))))) {
 			if (world instanceof ServerWorld) {
 				((World) world).getServer().getCommandManager()
 						.handleCommand(new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
