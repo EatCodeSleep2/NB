@@ -9,15 +9,15 @@ import net.mcreator.funmods.FunModsMod;
 import java.util.Map;
 
 @FunModsModElements.ModElement.Tag
-public class InstantHealthPotionStartedappliedProcedure extends FunModsModElements.ModElement {
-	public InstantHealthPotionStartedappliedProcedure(FunModsModElements instance) {
-		super(instance, 46);
+public class InstantHealthOnPotionActiveTickProcedure extends FunModsModElements.ModElement {
+	public InstantHealthOnPotionActiveTickProcedure(FunModsModElements instance) {
+		super(instance, 48);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				FunModsMod.LOGGER.warn("Failed to load dependency entity for procedure InstantHealthPotionStartedapplied!");
+				FunModsMod.LOGGER.warn("Failed to load dependency entity for procedure InstantHealthOnPotionActiveTick!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
