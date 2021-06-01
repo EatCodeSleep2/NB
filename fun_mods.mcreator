@@ -327,45 +327,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "pear_drop"
-    },
-    {
-      "name": "OrbitDim",
-      "type": "dimension",
-      "sortid": 33,
-      "compiles": false,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "orbit_dim",
-      "metadata": {
-        "ep": false
-      }
-    },
-    {
-      "name": "RocketControlT1",
-      "type": "block",
-      "sortid": 34,
-      "compiles": false,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rocket_control_t_1"
-    },
-    {
-      "name": "RocketBlasterTier1",
-      "type": "block",
-      "sortid": 35,
-      "compiles": false,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rocket_blaster_tier_1"
-    },
-    {
-      "name": "Orbitapple",
-      "type": "food",
-      "sortid": 33,
-      "compiles": false,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "orbitapple"
     }
   ],
   "variable_elements": [],
@@ -375,8 +336,8 @@
       "item.fun_mods.greendiamond": "Green Diamond",
       "item.fun_mods.bacon": "Bacon",
       "item.fun_mods.orbit_leggings": "Orbit Leggings",
-      "block.fun_mods.orbitblock": "Block of Orbit",
       "block.fun_mods.glasstrabdoor": "Glass trabdoor",
+      "block.fun_mods.orbitblock": "Block of Orbit",
       "item.fun_mods.invisible_helmet": "Invisible Helmet",
       "item.fun_mods.pear": "Pear",
       "item.fun_mods.orbit_chestplate": "Orbit Body",
