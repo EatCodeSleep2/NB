@@ -329,15 +329,6 @@
       "registry_name": "pear_drop"
     },
     {
-      "name": "RocketControlT1",
-      "type": "block",
-      "sortid": 34,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rocket_control_t_1"
-    },
-    {
       "name": "OrbitDim",
       "type": "dimension",
       "sortid": 33,
