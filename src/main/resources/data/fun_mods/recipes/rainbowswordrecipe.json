@@ -1,0 +1,24 @@
+{
+  "group": "fun_mods",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "fun_mods:rainboxingot"
+    },
+    "1": {
+      "item": "fun_mods:rainboxingot"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "fun_mods:rainbowsword",
+    "count": 1
+  }
+}
