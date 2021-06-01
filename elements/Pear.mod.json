@@ -9,17 +9,17 @@
     "rarity": "COMMON",
     "specialInfo": [],
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:FunMods"
     },
     "stackSize": 64,
-    "nutritionalValue": 3,
+    "nutritionalValue": 2,
     "saturation": 0.3,
     "eatingSpeed": 32,
     "resultItem": {
       "value": ""
     },
     "forDogs": false,
-    "isAlwaysEdible": false,
+    "isAlwaysEdible": true,
     "animation": "eat",
     "hasGlow": false
   }
