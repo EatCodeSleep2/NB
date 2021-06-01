@@ -34,7 +34,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.funmods.itemgroup.FunModsItemGroup;
-import net.mcreator.funmods.item.GreendiamondItem;
+import net.mcreator.funmods.item.RawaquaItem;
 import net.mcreator.funmods.FunModsModElements;
 
 import java.util.Random;
@@ -42,11 +42,11 @@ import java.util.List;
 import java.util.Collections;
 
 @FunModsModElements.ModElement.Tag
-public class GreendiamondoreBlock extends FunModsModElements.ModElement {
-	@ObjectHolder("fun_mods:greendiamondore")
+public class AquaoreBlock extends FunModsModElements.ModElement {
+	@ObjectHolder("fun_mods:aquaore")
 	public static final Block block = null;
-	public GreendiamondoreBlock(FunModsModElements instance) {
-		super(instance, 31);
+	public AquaoreBlock(FunModsModElements instance) {
+		super(instance, 40);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -58,8 +58,8 @@ public class GreendiamondoreBlock extends FunModsModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(4f, 10f).setLightLevel(s -> 0));
-			setRegistryName("greendiamondore");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(3f, 10f).setLightLevel(s -> 0));
+			setRegistryName("aquaore");
 		}
 
 		@Override
@@ -67,7 +67,7 @@ public class GreendiamondoreBlock extends FunModsModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(GreendiamondItem.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(RawaquaItem.block, (int) (1)));
 		}
 	}
 	private static Feature<OreFeatureConfig> feature = null;
@@ -91,23 +91,23 @@ public class GreendiamondoreBlock extends FunModsModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("fun_mods:greendiamondore_match"), () -> CustomRuleTest.codec);
+			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("fun_mods:aquaore_match"), () -> CustomRuleTest.codec);
 			feature = new OreFeature(OreFeatureConfig.CODEC) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
 					boolean dimensionCriteria = false;
-					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("fun_mods:orbit_dim")))
+					if (dimensionType == World.OVERWORLD)
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 4)).range(20)
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 5)).range(64)
 					.square().func_242731_b(10);
-			event.getRegistry().register(feature.setRegistryName("greendiamondore"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fun_mods:greendiamondore"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("aquaore"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fun_mods:aquaore"), configuredFeature);
 		}
 	}
 	@SubscribeEvent

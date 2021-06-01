@@ -1,0 +1,39 @@
+{
+  "group": "fun_mods",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "fun_mods:aquaingot"
+    },
+    "2": {
+      "item": "fun_mods:aquaingot"
+    },
+    "3": {
+      "item": "fun_mods:aquaingot"
+    },
+    "4": {
+      "item": "fun_mods:aquaingot"
+    },
+    "5": {
+      "item": "fun_mods:aquaingot"
+    },
+    "6": {
+      "item": "fun_mods:aquaingot"
+    },
+    "7": {
+      "item": "fun_mods:aquaingot"
+    },
+    "8": {
+      "item": "fun_mods:aquaingot"
+    }
+  },
+  "result": {
+    "item": "fun_mods:scubagear_chestplate",
+    "count": 1
+  }
+}

@@ -101,7 +101,7 @@ public class OrbitoreBlock extends FunModsModElements.ModElement {
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
 					boolean dimensionCriteria = false;
-					if (dimensionType == World.OVERWORLD)
+					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("fun_mods:orbit_dim")))
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;

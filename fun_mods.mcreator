@@ -453,6 +453,60 @@
           }
         ]
       }
+    },
+    {
+      "name": "Aquaore",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aquaore"
+    },
+    {
+      "name": "Aquaingot",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aquaingot"
+    },
+    {
+      "name": "Rawaqua",
+      "type": "item",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rawaqua"
+    },
+    {
+      "name": "Aquaing",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aquaing"
+    },
+    {
+      "name": "Aquahelmetr",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aquahelmetr"
+    },
+    {
+      "name": "Scubatank",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "scubatank"
     }
   ],
   "variable_elements": [],
@@ -461,13 +515,16 @@
     "en_us": {
       "item.fun_mods.greendiamond": "Green Diamond",
       "item.fun_mods.bacon": "Bacon",
+      "item.fun_mods.aquaingot": "Aquaingot",
       "item.fun_mods.orbit_leggings": "Orbit Leggings",
       "block.fun_mods.orbitblock": "Block of Orbit",
       "block.fun_mods.glasstrabdoor": "Glass trabdoor",
       "item.fun_mods.invisible_helmet": "Invisible Helmet",
       "block.fun_mods.rocket_controller_tier_i": "Rocket Controller Tier 1",
       "item.fun_mods.pear": "Pear",
+      "block.fun_mods.aquaore": "Aquaore",
       "item.fun_mods.orbit_chestplate": "Orbit Body",
+      "item.fun_mods.rawaqua": "Rawaqua",
       "item.fun_mods.reddiamond": "Red Diamond",
       "enchantment.fun_mods.wither": "Wither",
       "biome.fun_mods.savannahdesert": "Savannahdesert",

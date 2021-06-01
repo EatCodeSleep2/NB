@@ -2,12 +2,12 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "greendiamondore",
-    "textureTop": "greendiamondore",
-    "textureLeft": "greendiamondore",
-    "textureFront": "greendiamondore",
-    "textureRight": "greendiamondore",
-    "textureBack": "greendiamondore",
+    "texture": "aquaore",
+    "textureTop": "aquaore",
+    "textureLeft": "aquaore",
+    "textureFront": "aquaore",
+    "textureRight": "aquaore",
+    "textureBack": "aquaore",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -32,9 +32,9 @@
         "subtract": false
       }
     ],
-    "name": "Green Diamond Ore",
+    "name": "Aquaore",
     "specialInfo": [],
-    "hardness": 4.0,
+    "hardness": 3.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -43,7 +43,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Greendiamond"
+      "value": "CUSTOM:Rawaqua"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -102,7 +102,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "spawnWorldTypes": [
-      "CUSTOM:OrbitDim"
+      "Surface"
     ],
     "restrictionBiomes": [],
     "blocksToReplace": [
@@ -111,8 +111,8 @@
       }
     ],
     "frequencyPerChunks": 10,
-    "frequencyOnChunk": 4,
+    "frequencyOnChunk": 5,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 20
+    "maxGenerateHeight": 64
   }
 }

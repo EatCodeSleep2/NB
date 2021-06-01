@@ -24,6 +24,6 @@ public class InvisibleBodyTickEventProcedure extends FunModsModElements.ModEleme
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.INVISIBILITY, (int) 1000000, (int) 1, (false), (false)));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.INVISIBILITY, (int) 100000, (int) 1, (false), (false)));
 	}
 }
