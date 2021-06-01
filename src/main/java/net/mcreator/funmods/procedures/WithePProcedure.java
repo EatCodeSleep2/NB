@@ -1,11 +1,28 @@
 package net.mcreator.funmods.procedures;
 
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.minecraftforge.common.MinecraftForge;
+
+import net.minecraft.world.World;
+import net.minecraft.potion.Effects;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.enchantment.EnchantmentHelper;
+
+import net.mcreator.funmods.enchantment.WitherEnchantment;
+import net.mcreator.funmods.FunModsModElements;
+import net.mcreator.funmods.FunModsMod;
+
+import java.util.Map;
+import java.util.HashMap;
+
 @FunModsModElements.ModElement.Tag
 public class WithePProcedure extends FunModsModElements.ModElement {
-
 	public WithePProcedure(FunModsModElements instance) {
 		super(instance, 39);
-
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -20,10 +37,8 @@ public class WithePProcedure extends FunModsModElements.ModElement {
 				FunModsMod.LOGGER.warn("Failed to load dependency sourceentity for procedure WitheP!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
-
 		if ((((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)).isEnchanted())
 				&& ((EnchantmentHelper.getEnchantmentLevel(WitherEnchantment.enchantment,
 						((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY))) > 0))) {
@@ -33,7 +48,6 @@ public class WithePProcedure extends FunModsModElements.ModElement {
 								((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)))
 								- 1)));
 		}
-
 	}
 
 	@SubscribeEvent
@@ -60,5 +74,4 @@ public class WithePProcedure extends FunModsModElements.ModElement {
 			this.executeProcedure(dependencies);
 		}
 	}
-
 }
