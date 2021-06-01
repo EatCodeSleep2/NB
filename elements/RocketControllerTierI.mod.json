@@ -2,15 +2,15 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "savannahleaves",
-    "textureTop": "savannahleaves",
-    "textureLeft": "savannahleaves",
-    "textureFront": "savannahleaves",
-    "textureRight": "savannahleaves",
-    "textureBack": "savannahleaves",
+    "texture": "rct1s",
+    "textureTop": "rct1ss",
+    "textureLeft": "rct1ss",
+    "textureFront": "rct1f",
+    "textureRight": "rct1ss",
+    "textureBack": "rct1ss",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -32,18 +32,18 @@
         "subtract": false
       }
     ],
-    "name": "Savannah Leaves",
+    "name": "Rocket Controller Tier 1",
     "specialInfo": [],
-    "hardness": 0.0,
-    "resistance": 0.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:FunMods"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:Pear"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -52,12 +52,12 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "LEAVES"
+      "value": "IRON"
     },
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
-    "colorOnMap": "GRASS",
+    "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
     },
@@ -72,7 +72,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "PLANT"
+      "value": "METAL"
     },
     "luminance": 0,
     "unbreakable": false,
@@ -103,7 +103,11 @@
     "fluidRestrictions": [],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

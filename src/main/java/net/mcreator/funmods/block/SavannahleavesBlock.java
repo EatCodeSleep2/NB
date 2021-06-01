@@ -35,7 +35,7 @@ public class SavannahleavesBlock extends FunModsModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(1f, 0f).setLightLevel(s -> 0));
+			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
 			setRegistryName("savannahleaves");
 		}
 
@@ -49,7 +49,7 @@ public class SavannahleavesBlock extends FunModsModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(PearItem.block, (int) (0)));
+			return Collections.singletonList(new ItemStack(PearItem.block, (int) (1)));
 		}
 	}
 }
