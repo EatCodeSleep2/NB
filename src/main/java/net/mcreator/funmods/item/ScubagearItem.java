@@ -18,24 +18,25 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.funmods.procedures.InvisibleBodyTickEventProcedure;
+import net.mcreator.funmods.procedures.ScubagearHelmetTickEventProcedure;
+import net.mcreator.funmods.procedures.ScubagearBodyTickEventProcedure;
 import net.mcreator.funmods.FunModsModElements;
 
 import java.util.Map;
 import java.util.HashMap;
 
 @FunModsModElements.ModElement.Tag
-public class InvisibleItem extends FunModsModElements.ModElement {
-	@ObjectHolder("fun_mods:invisible_helmet")
+public class ScubagearItem extends FunModsModElements.ModElement {
+	@ObjectHolder("fun_mods:scubagear_helmet")
 	public static final Item helmet = null;
-	@ObjectHolder("fun_mods:invisible_chestplate")
+	@ObjectHolder("fun_mods:scubagear_chestplate")
 	public static final Item body = null;
-	@ObjectHolder("fun_mods:invisible_leggings")
+	@ObjectHolder("fun_mods:scubagear_leggings")
 	public static final Item legs = null;
-	@ObjectHolder("fun_mods:invisible_boots")
+	@ObjectHolder("fun_mods:scubagear_boots")
 	public static final Item boots = null;
-	public InvisibleItem(FunModsModElements instance) {
-		super(instance, 18);
+	public ScubagearItem(FunModsModElements instance) {
+		super(instance, 37);
 	}
 
 	@Override
@@ -69,12 +70,12 @@ public class InvisibleItem extends FunModsModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public String getName() {
-				return "invisible";
+				return "scubagear";
 			}
 
 			@Override
 			public float getToughness() {
-				return 0f;
+				return 1f;
 			}
 
 			@Override
@@ -85,13 +86,26 @@ public class InvisibleItem extends FunModsModElements.ModElement {
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "fun_mods:textures/models/armor/invislvbe_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "fun_mods:textures/models/armor/scubagear_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("invisible_helmet"));
+
+			@Override
+			public void onArmorTick(ItemStack itemstack, World world, PlayerEntity entity) {
+				super.onArmorTick(itemstack, world, entity);
+				double x = entity.getPosX();
+				double y = entity.getPosY();
+				double z = entity.getPosZ();
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					ScubagearHelmetTickEventProcedure.executeProcedure($_dependencies);
+				}
+			}
+		}.setRegistryName("scubagear_helmet"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "fun_mods:textures/models/armor/invislvbe_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "fun_mods:textures/models/armor/scubagear_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 
 			@Override
@@ -102,21 +116,21 @@ public class InvisibleItem extends FunModsModElements.ModElement {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
-					InvisibleBodyTickEventProcedure.executeProcedure($_dependencies);
+					ScubagearBodyTickEventProcedure.executeProcedure($_dependencies);
 				}
 			}
-		}.setRegistryName("invisible_chestplate"));
+		}.setRegistryName("scubagear_chestplate"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "fun_mods:textures/models/armor/invislvbe_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "fun_mods:textures/models/armor/scubagear_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("invisible_leggings"));
+		}.setRegistryName("scubagear_leggings"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "fun_mods:textures/models/armor/invislvbe_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "fun_mods:textures/models/armor/scubagear_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("invisible_boots"));
+		}.setRegistryName("scubagear_boots"));
 	}
 }

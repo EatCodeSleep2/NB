@@ -3,24 +3,27 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "invisblehelmet",
+    "textureHelmet": "scubasnorkel",
     "enableBody": true,
-    "textureBody": "invisisblechestplate",
+    "textureBody": "scubatank",
     "enableLeggings": true,
-    "textureLeggings": "invisislbeleggings",
+    "textureLeggings": "scubawetsuit",
     "enableBoots": true,
-    "textureBoots": "invisisbleboots",
+    "textureBoots": "scubatank",
+    "onHelmetTick": {
+      "name": "ScubagearHelmetTickEvent"
+    },
     "onBodyTick": {
-      "name": "InvisibleBodyTickEvent"
+      "name": "ScubagearBodyTickEvent"
     },
     "creativeTab": {
       "value": "COMBAT"
     },
-    "armorTextureFile": "invislvbe",
-    "helmetName": "Invisible Helmet",
-    "bodyName": "Invisible Body",
-    "leggingsName": "Invisible Leggings",
-    "bootsName": "Invisible Boots",
+    "armorTextureFile": "scubagear",
+    "helmetName": "Scubagear Helmet",
+    "bodyName": "Scubagear Body",
+    "leggingsName": "Scubagear Leggings",
+    "bootsName": "Scubagear Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],
@@ -47,7 +50,7 @@
     "damageValueLeggings": 5,
     "damageValueBoots": 2,
     "enchantability": 9,
-    "toughness": 0.0,
+    "toughness": 1.0,
     "knockbackResistance": 0.0,
     "equipSound": {
       "value": ""
