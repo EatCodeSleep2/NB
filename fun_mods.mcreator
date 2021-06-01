@@ -538,30 +538,13 @@
       "registry_name": "scubatank"
     },
     {
-      "name": "InstantHealth",
-      "type": "potion",
-      "sortid": 47,
+      "name": "Salt",
+      "type": "item",
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "instant_health"
-    },
-    {
-      "name": "InstantHealthOnPotionActiveTick",
-      "type": "procedure",
-      "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "instant_health_on_potion_active_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
+      "registry_name": "salt"
     },
     {
       "name": "Doritos",
@@ -571,15 +554,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "doritos"
-    },
-    {
-      "name": "Salt",
-      "type": "item",
-      "sortid": 50,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "salt"
     }
   ],
   "variable_elements": [],
@@ -601,7 +575,6 @@
       "item.minecraft.lingering_potion.effect.instant_health": "Lingering  Potion of Instant Hunger",
       "item.fun_mods.orbit_chestplate": "Orbit Body",
       "item.fun_mods.rawaqua": "Raw aqua",
-      "item.fun_mods.doritos": "Doritos",
       "item.fun_mods.reddiamond": "Red Diamond",
       "enchantment.fun_mods.wither": "Wither",
       "effect.instant_health": " Potion of Instant Hunger",
@@ -612,7 +585,6 @@
       "item.fun_mods.raworbit": "Raw Orbit",
       "item.fun_mods.orbitpickaxe": "Orbit_pickaxe",
       "block.fun_mods.savannahleaves": "Savannah Leaves",
-      "item.fun_mods.salt": "Salt",
       "item.fun_mods.orbitignot": "Orbit Ingot",
       "item.fun_mods.rainbowsword": "Rainbow Sword",
       "block.fun_mods.rocket_booster_tier_i": "Rocket Booster Tier 1",
