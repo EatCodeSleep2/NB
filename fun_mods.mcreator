@@ -284,6 +284,42 @@
       "registry_name": "savannahleaves"
     },
     {
+      "name": "Rainbowswordrecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rainbowswordrecipe"
+    },
+    {
+      "name": "Reddiamondore",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reddiamondore"
+    },
+    {
+      "name": "Greendiamondore",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "greendiamondore"
+    },
+    {
+      "name": "Rainbowsword",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rainbowsword"
+    },
+    {
       "name": "PearDrop",
       "type": "loottable",
       "sortid": 29,
@@ -308,16 +344,19 @@
       "item.fun_mods.reddiamond": "Reddiamond",
       "enchantment.fun_mods.wither": "Wither",
       "biome.fun_mods.savannahdesert": "Savannahdesert",
+      "block.fun_mods.greendiamondore": "Greendiamondore",
       "item.fun_mods.rainboxingot": "Rainboxingot",
       "item.fun_mods.invisible_chestplate": "Invisible Body",
       "item.fun_mods.raworbit": "Raworbit",
       "item.fun_mods.orbitpickaxe": "Orbit_pickaxe",
       "block.fun_mods.savannahleaves": "Savannahleaves",
       "item.fun_mods.orbitignot": "Orbit_ignot",
+      "item.fun_mods.rainbowsword": "Rainbowsword",
       "block.fun_mods.orbitore": "Orbitore",
       "item.fun_mods.orbitsword": "Orbitswords",
       "item.fun_mods.invisible_leggings": "Invisible Leggings",
       "item.fun_mods.invisible_boots": "Invisible Boots",
+      "block.fun_mods.reddiamondore": "Reddiamondore",
       "item.fun_mods.rawbacon": "Raw bacon",
       "itemGroup.tabfun_mods": "Fun Mods",
       "item.fun_mods.orbit_boots": "Orbit Boots",
