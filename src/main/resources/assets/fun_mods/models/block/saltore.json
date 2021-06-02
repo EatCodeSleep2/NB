@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fun_mods:blocks/saltore",
+    "up": "fun_mods:blocks/saltore",
+    "north": "fun_mods:blocks/saltore",
+    "east": "fun_mods:blocks/saltore",
+    "south": "fun_mods:blocks/saltore",
+    "west": "fun_mods:blocks/saltore",
+    "particle": "fun_mods:blocks/saltore"
+  }
+}
