@@ -734,6 +734,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "backpack"
+    },
+    {
+      "name": "SnownyJungle",
+      "type": "biome",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snowny_jungle"
     }
   ],
   "variable_elements": [],

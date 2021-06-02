@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "back",
+    "texture": "backpack",
     "customModelName": "Normal",
     "name": "Backpack",
     "rarity": "COMMON",
