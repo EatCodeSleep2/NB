@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fun_mods:items/back"
+    "layer0": "fun_mods:items/backpack"
   }
 }

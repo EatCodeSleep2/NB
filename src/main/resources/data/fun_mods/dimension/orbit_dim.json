@@ -36,7 +36,7 @@
       },
       "biomes": [
         {
-          "biome": "fun_mods:deleted_mod_element",
+          "biome": "fun_mods:orbit_biom",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
