@@ -779,6 +779,32 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "backpackr"
+    },
+    {
+      "name": "RCTO1",
+      "type": "gui",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcto_1"
+    },
+    {
+      "name": "RCTO1PROC",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcto_1_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
