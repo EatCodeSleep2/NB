@@ -2,12 +2,12 @@
 package net.mcreator.funmods.item;
 
 @FunModsModElements.ModElement.Tag
-public class BackpackItem extends FunModsModElements.ModElement {
+public class ButterItem extends FunModsModElements.ModElement {
 
-	@ObjectHolder("fun_mods:backpack")
+	@ObjectHolder("fun_mods:butter")
 	public static final Item block = null;
 
-	public BackpackItem(FunModsModElements instance) {
+	public ButterItem(FunModsModElements instance) {
 		super(instance, 55);
 
 	}
@@ -20,8 +20,8 @@ public class BackpackItem extends FunModsModElements.ModElement {
 	public static class ItemCustom extends Item {
 
 		public ItemCustom() {
-			super(new Item.Properties().group(FunModsItemGroup.tab).maxStackSize(1).isImmuneToFire().rarity(Rarity.COMMON));
-			setRegistryName("backpack");
+			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
+			setRegistryName("butter");
 		}
 
 		@Override

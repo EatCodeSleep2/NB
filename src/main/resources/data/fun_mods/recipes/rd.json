@@ -1,0 +1,42 @@
+{
+  "group": "fun_mods",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "fun_mods:orbitignot"
+    },
+    "1": {
+      "item": "minecraft:bow"
+    },
+    "2": {
+      "item": "fun_mods:doritos"
+    },
+    "3": {
+      "item": "fun_mods:orbitignot"
+    },
+    "4": {
+      "item": "minecraft:bow"
+    },
+    "5": {
+      "item": "fun_mods:doritos"
+    },
+    "6": {
+      "item": "fun_mods:orbitignot"
+    },
+    "7": {
+      "item": "minecraft:bow"
+    },
+    "8": {
+      "item": "fun_mods:doritos"
+    }
+  },
+  "result": {
+    "item": "fun_mods:deleted_mod_element",
+    "count": 1
+  }
+}
