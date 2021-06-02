@@ -50,7 +50,7 @@ public class BackpackItem extends FunModsModElements.ModElement {
 	@ObjectHolder("fun_mods:backpack")
 	public static final Item block = null;
 	public BackpackItem(FunModsModElements instance) {
-		super(instance, 55);
+		super(instance, 64);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -159,7 +159,7 @@ public class BackpackItem extends FunModsModElements.ModElement {
 		}
 
 		private ItemStackHandler createItemHandler() {
-			return new ItemStackHandler(27) {
+			return new ItemStackHandler(26) {
 				@Override
 				public int getSlotLimit(int slot) {
 					return 64;

@@ -770,6 +770,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "rcto_rec"
+    },
+    {
+      "name": "Backpackr",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "backpackr"
     }
   ],
   "variable_elements": [],
