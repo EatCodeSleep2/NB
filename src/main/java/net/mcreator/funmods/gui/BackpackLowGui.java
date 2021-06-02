@@ -1,71 +1,81 @@
 
 package net.mcreator.funmods.gui;
 
+import net.minecraftforge.items.SlotItemHandler;
+import net.minecraftforge.items.ItemStackHandler;
+import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.fml.network.NetworkEvent;
+import net.minecraftforge.fml.network.IContainerFactory;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.DeferredWorkQueue;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.network.PacketBuffer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.inventory.container.Slot;
+import net.minecraft.inventory.container.ContainerType;
+import net.minecraft.inventory.container.Container;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.client.gui.ScreenManager;
+
+import net.mcreator.funmods.FunModsModElements;
 import net.mcreator.funmods.FunModsMod;
+
+import java.util.function.Supplier;
+import java.util.Map;
+import java.util.HashMap;
 
 @FunModsModElements.ModElement.Tag
 public class BackpackLowGui extends FunModsModElements.ModElement {
-
 	public static HashMap guistate = new HashMap();
-
 	private static ContainerType<GuiContainerMod> containerType = null;
-
 	public BackpackLowGui(FunModsModElements instance) {
 		super(instance, 59);
-
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
 				GUISlotChangedMessage::handler);
-
 		containerType = new ContainerType<>(new GuiContainerModFactory());
-
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ContainerRegisterHandler());
-
 	}
-
 	private static class ContainerRegisterHandler {
-
 		@SubscribeEvent
 		public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
 			event.getRegistry().register(containerType.setRegistryName("backpack_low"));
 		}
-
 	}
-
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
 		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, BackpackLowGuiWindow::new));
 	}
-
 	public static class GuiContainerModFactory implements IContainerFactory {
-
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
 			return new GuiContainerMod(id, inv, extraData);
 		}
-
 	}
 
 	public static class GuiContainerMod extends Container implements Supplier<Map<Integer, Slot>> {
-
 		World world;
 		PlayerEntity entity;
 		int x, y, z;
-
 		private IItemHandler internal;
-
 		private Map<Integer, Slot> customSlots = new HashMap<>();
-
 		private boolean bound = false;
-
 		public GuiContainerMod(int id, PlayerInventory inv, PacketBuffer extraData) {
 			super(containerType, id);
-
 			this.entity = inv.player;
 			this.world = inv.player.world;
-
 			this.internal = new ItemStackHandler(28);
-
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -73,7 +83,6 @@ public class BackpackLowGui extends FunModsModElements.ModElement {
 				this.y = pos.getY();
 				this.z = pos.getZ();
 			}
-
 			if (pos != null) {
 				if (extraData.readableBytes() == 1) { // bound to item
 					byte hand = extraData.readByte();
@@ -104,106 +113,73 @@ public class BackpackLowGui extends FunModsModElements.ModElement {
 					}
 				}
 			}
-
 			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 62) {
-
 			}));
 			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 25, 62) {
-
 			}));
 			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 62) {
-
 			}));
 			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 61, 62) {
-
 			}));
 			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 79, 62) {
-
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
 			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 97, 62) {
-
 			}));
 			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 115, 62) {
-
 			}));
 			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 133, 62) {
-
 			}));
 			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 151, 62) {
-
 			}));
 			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 7, 44) {
-
 			}));
 			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 25, 44) {
-
 			}));
 			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 43, 44) {
-
 			}));
 			this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 61, 44) {
-
 			}));
 			this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 79, 44) {
-
 			}));
 			this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 97, 44) {
-
 			}));
 			this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 115, 44) {
-
 			}));
 			this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 133, 44) {
-
 			}));
 			this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 151, 44) {
-
 			}));
 			this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 7, 26) {
-
 			}));
 			this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 25, 26) {
-
 			}));
 			this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 43, 26) {
-
 			}));
 			this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 61, 26) {
-
 			}));
 			this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 79, 26) {
-
 			}));
 			this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 97, 26) {
-
 			}));
 			this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 115, 26) {
-
 			}));
 			this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 115, 26) {
-
 			}));
 			this.customSlots.put(26, this.addSlot(new SlotItemHandler(internal, 26, 133, 26) {
-
 			}));
 			this.customSlots.put(27, this.addSlot(new SlotItemHandler(internal, 27, 151, 26) {
-
 			}));
-
 			int si;
 			int sj;
-
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
 					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
-
 			for (si = 0; si < 9; ++si)
 				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
-
 		}
 
 		public Map<Integer, Slot> get() {
@@ -219,11 +195,9 @@ public class BackpackLowGui extends FunModsModElements.ModElement {
 		public ItemStack transferStackInSlot(PlayerEntity playerIn, int index) {
 			ItemStack itemstack = ItemStack.EMPTY;
 			Slot slot = (Slot) this.inventorySlots.get(index);
-
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-
 				if (index < 28) {
 					if (!this.mergeItemStack(itemstack1, 28, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
@@ -241,28 +215,103 @@ public class BackpackLowGui extends FunModsModElements.ModElement {
 					}
 					return ItemStack.EMPTY;
 				}
-
 				if (itemstack1.getCount() == 0) {
 					slot.putStack(ItemStack.EMPTY);
 				} else {
 					slot.onSlotChanged();
 				}
-
 				if (itemstack1.getCount() == itemstack.getCount()) {
 					return ItemStack.EMPTY;
 				}
-
 				slot.onTake(playerIn, itemstack1);
 			}
 			return itemstack;
 		}
 
-		@Override /* failed to load code for net.minecraft.inventory.container.Container */
+		@Override /**
+					 * Merges provided ItemStack with the first avaliable one in the
+					 * container/player inventor between minIndex (included) and maxIndex
+					 * (excluded). Args : stack, minIndex, maxIndex, negativDirection. /!\ the
+					 * Container implementation do not check if the item is valid for the slot
+					 */
+		protected boolean mergeItemStack(ItemStack stack, int startIndex, int endIndex, boolean reverseDirection) {
+			boolean flag = false;
+			int i = startIndex;
+			if (reverseDirection) {
+				i = endIndex - 1;
+			}
+			if (stack.isStackable()) {
+				while (!stack.isEmpty()) {
+					if (reverseDirection) {
+						if (i < startIndex) {
+							break;
+						}
+					} else if (i >= endIndex) {
+						break;
+					}
+					Slot slot = this.inventorySlots.get(i);
+					ItemStack itemstack = slot.getStack();
+					if (slot.isItemValid(itemstack) && !itemstack.isEmpty() && areItemsAndTagsEqual(stack, itemstack)) {
+						int j = itemstack.getCount() + stack.getCount();
+						int maxSize = Math.min(slot.getSlotStackLimit(), stack.getMaxStackSize());
+						if (j <= maxSize) {
+							stack.setCount(0);
+							itemstack.setCount(j);
+							slot.putStack(itemstack);
+							flag = true;
+						} else if (itemstack.getCount() < maxSize) {
+							stack.shrink(maxSize - itemstack.getCount());
+							itemstack.setCount(maxSize);
+							slot.putStack(itemstack);
+							flag = true;
+						}
+					}
+					if (reverseDirection) {
+						--i;
+					} else {
+						++i;
+					}
+				}
+			}
+			if (!stack.isEmpty()) {
+				if (reverseDirection) {
+					i = endIndex - 1;
+				} else {
+					i = startIndex;
+				}
+				while (true) {
+					if (reverseDirection) {
+						if (i < startIndex) {
+							break;
+						}
+					} else if (i >= endIndex) {
+						break;
+					}
+					Slot slot1 = this.inventorySlots.get(i);
+					ItemStack itemstack1 = slot1.getStack();
+					if (itemstack1.isEmpty() && slot1.isItemValid(stack)) {
+						if (stack.getCount() > slot1.getSlotStackLimit()) {
+							slot1.putStack(stack.split(slot1.getSlotStackLimit()));
+						} else {
+							slot1.putStack(stack.split(stack.getCount()));
+						}
+						slot1.onSlotChanged();
+						flag = true;
+						break;
+					}
+					if (reverseDirection) {
+						--i;
+					} else {
+						++i;
+					}
+				}
+			}
+			return flag;
+		}
 
 		@Override
 		public void onContainerClosed(PlayerEntity playerIn) {
 			super.onContainerClosed(playerIn);
-
 			if (!bound && (playerIn instanceof ServerPlayerEntity)) {
 				if (!playerIn.isAlive() || playerIn instanceof ServerPlayerEntity && ((ServerPlayerEntity) playerIn).hasDisconnected()) {
 					for (int j = 0; j < internal.getSlots(); ++j) {
@@ -287,13 +336,10 @@ public class BackpackLowGui extends FunModsModElements.ModElement {
 				handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 			}
 		}
-
 	}
 
 	public static class ButtonPressedMessage {
-
 		int buttonID, x, y, z;
-
 		public ButtonPressedMessage(PacketBuffer buffer) {
 			this.buttonID = buffer.readInt();
 			this.x = buffer.readInt();
@@ -323,18 +369,14 @@ public class BackpackLowGui extends FunModsModElements.ModElement {
 				int x = message.x;
 				int y = message.y;
 				int z = message.z;
-
 				handleButtonAction(entity, buttonID, x, y, z);
 			});
 			context.setPacketHandled(true);
 		}
-
 	}
 
 	public static class GUISlotChangedMessage {
-
 		int slotID, x, y, z, changeType, meta;
-
 		public GUISlotChangedMessage(int slotID, int x, int y, int z, int changeType, int meta) {
 			this.slotID = slotID;
 			this.x = x;
@@ -372,30 +414,22 @@ public class BackpackLowGui extends FunModsModElements.ModElement {
 				int x = message.x;
 				int y = message.y;
 				int z = message.z;
-
 				handleSlotAction(entity, slotID, changeType, meta, x, y, z);
 			});
 			context.setPacketHandled(true);
 		}
-
 	}
-
 	static void handleButtonAction(PlayerEntity entity, int buttonID, int x, int y, int z) {
 		World world = entity.world;
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-
 	}
 
 	private static void handleSlotAction(PlayerEntity entity, int slotID, int changeType, int meta, int x, int y, int z) {
 		World world = entity.world;
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-
 	}
-
 }
