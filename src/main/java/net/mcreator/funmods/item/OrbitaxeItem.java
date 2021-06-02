@@ -1,12 +1,20 @@
 
 package net.mcreator.funmods.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+import net.minecraft.item.AxeItem;
+
+import net.mcreator.funmods.FunModsModElements;
+
 @FunModsModElements.ModElement.Tag
 public class OrbitaxeItem extends FunModsModElements.ModElement {
-
 	@ObjectHolder("fun_mods:orbitaxe")
 	public static final Item block = null;
-
 	public OrbitaxeItem(FunModsModElements instance) {
 		super(instance, 52);
 	}
@@ -38,8 +46,6 @@ public class OrbitaxeItem extends FunModsModElements.ModElement {
 				return Ingredient.EMPTY;
 			}
 		}, 1, 0f, new Item.Properties().group(ItemGroup.TOOLS)) {
-
 		}.setRegistryName("orbitaxe"));
 	}
-
 }

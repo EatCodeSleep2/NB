@@ -1,0 +1,23 @@
+{
+  "group": "fun_mods",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "3 5"
+  ],
+  "key": {
+    "1": {
+      "item": "fun_mods:butter"
+    },
+    "3": {
+      "item": "fun_mods:butter"
+    },
+    "5": {
+      "item": "fun_mods:butter"
+    }
+  },
+  "result": {
+    "item": "fun_mods:cheese",
+    "count": 1
+  }
+}
