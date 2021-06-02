@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fun_mods:blocks/trash",
+    "up": "fun_mods:blocks/trash",
+    "north": "fun_mods:blocks/trash",
+    "east": "fun_mods:blocks/trash",
+    "south": "fun_mods:blocks/trash",
+    "west": "fun_mods:blocks/trash",
+    "particle": "fun_mods:blocks/trash"
+  }
+}

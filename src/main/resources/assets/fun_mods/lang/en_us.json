@@ -5,6 +5,7 @@
   "item.fun_mods.aquaingot": "Aqua ingot",
   "item.fun_mods.orbit_leggings": "Orbit Leggings",
   "item.minecraft.tipped_arrow.effect.instant_health": "Arrow of  Potion of Instant Hunger",
+  "item.fun_mods.scubagear_boots": "Scubagear Boots",
   "block.fun_mods.orbitblock": "Block of Orbit",
   "block.fun_mods.glasstrabdoor": "Glass trabdoor",
   "item.fun_mods.invisible_helmet": "Invisible Helmet",
@@ -15,6 +16,7 @@
   "item.fun_mods.orbit_chestplate": "Orbit Body",
   "item.fun_mods.rawaqua": "Raw aqua",
   "item.fun_mods.doritos": "Doritos",
+  "item.fun_mods.scubagear_helmet": "Scubagear Helmet",
   "item.fun_mods.reddiamond": "Red Diamond",
   "enchantment.fun_mods.wither": "Wither",
   "effect.instant_health": " Potion of Instant Hunger",
@@ -36,7 +38,11 @@
   "item.fun_mods.invisible_boots": "Invisible Boots",
   "block.fun_mods.reddiamondore": "Red Diamond Ore",
   "item.fun_mods.rawbacon": "Raw bacon",
+  "block.fun_mods.saltore": "Salt Ore",
   "itemGroup.tabfun_mods": "Fun Mods",
   "item.fun_mods.orbit_boots": "Orbit Boots",
-  "item.fun_mods.orbit_helmet": "Orbit Helmet"
+  "item.fun_mods.orbit_helmet": "Orbit Helmet",
+  "item.fun_mods.scubagear_chestplate": "Scubagear Body",
+  "block.fun_mods.trash_block": "Trash Block",
+  "item.fun_mods.scubagear_leggings": "Scubagear Leggings"
 }

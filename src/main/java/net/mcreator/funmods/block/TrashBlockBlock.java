@@ -21,20 +21,26 @@ import net.minecraft.world.ISeedReader;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
+import net.minecraft.util.Mirror;
+import net.minecraft.util.Direction;
+import net.minecraft.state.StateContainer;
+import net.minecraft.state.DirectionProperty;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.funmods.itemgroup.FunModsItemGroup;
-import net.mcreator.funmods.item.SaltItem;
 import net.mcreator.funmods.FunModsModElements;
 
 import java.util.Random;
@@ -42,11 +48,11 @@ import java.util.List;
 import java.util.Collections;
 
 @FunModsModElements.ModElement.Tag
-public class SaltoreBlock extends FunModsModElements.ModElement {
-	@ObjectHolder("fun_mods:saltore")
+public class TrashBlockBlock extends FunModsModElements.ModElement {
+	@ObjectHolder("fun_mods:trash_block")
 	public static final Block block = null;
-	public SaltoreBlock(FunModsModElements instance) {
-		super(instance, 51);
+	public TrashBlockBlock(FunModsModElements instance) {
+		super(instance, 52);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -57,9 +63,30 @@ public class SaltoreBlock extends FunModsModElements.ModElement {
 		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(FunModsItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends Block {
+		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.SAND).sound(SoundType.SAND).hardnessAndResistance(2f, 1f).setLightLevel(s -> 0));
-			setRegistryName("saltore");
+			super(Block.Properties.create(Material.WOOL).sound(SoundType.CLOTH).hardnessAndResistance(3f, 2f).setLightLevel(s -> 0));
+			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
+			setRegistryName("trash_block");
+		}
+
+		@Override
+		protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
+			builder.add(FACING);
+		}
+
+		public BlockState rotate(BlockState state, Rotation rot) {
+			return state.with(FACING, rot.rotate(state.get(FACING)));
+		}
+
+		public BlockState mirror(BlockState state, Mirror mirrorIn) {
+			return state.rotate(mirrorIn.toRotation(state.get(FACING)));
+		}
+
+		@Override
+		public BlockState getStateForPlacement(BlockItemUseContext context) {
+			;
+			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
 		}
 
 		@Override
@@ -67,7 +94,7 @@ public class SaltoreBlock extends FunModsModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(SaltItem.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
 	private static Feature<OreFeatureConfig> feature = null;
@@ -78,12 +105,6 @@ public class SaltoreBlock extends FunModsModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == Blocks.DIORITE.getDefaultState().getBlock())
-				blockCriteria = true;
-			if (blockAt.getBlock() == Blocks.ANDESITE.getDefaultState().getBlock())
-				blockCriteria = true;
-			if (blockAt.getBlock() == Blocks.CLAY.getDefaultState().getBlock())
-				blockCriteria = true;
 			if (blockAt.getBlock() == Blocks.SAND.getDefaultState().getBlock())
 				blockCriteria = true;
 			return blockCriteria;
@@ -97,7 +118,7 @@ public class SaltoreBlock extends FunModsModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("fun_mods:saltore_match"), () -> CustomRuleTest.codec);
+			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("fun_mods:trash_block_match"), () -> CustomRuleTest.codec);
 			feature = new OreFeature(OreFeatureConfig.CODEC) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
@@ -110,10 +131,10 @@ public class SaltoreBlock extends FunModsModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(64)
-					.square().func_242731_b(10);
-			event.getRegistry().register(feature.setRegistryName("saltore"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fun_mods:saltore"), configuredFeature);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 3)).range(64)
+					.square().func_242731_b(3);
+			event.getRegistry().register(feature.setRegistryName("trash_block"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fun_mods:trash_block"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
