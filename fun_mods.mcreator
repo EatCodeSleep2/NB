@@ -743,6 +743,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "orbit_biom"
+    },
+    {
+      "name": "Orbitliquid",
+      "type": "fluid",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbitliquid"
     }
   ],
   "variable_elements": [],
@@ -760,8 +769,8 @@
       "item.fun_mods.pear": "Pear",
       "item.fun_mods.orbit_chestplate": "Orbit Body",
       "item.fun_mods.cheese": "Cheese",
-      "enchantment.fun_mods.wither": "Wither",
       "item.fun_mods.orbit_dim": "Orbit Dim Portal Igniter",
+      "enchantment.fun_mods.wither": "Wither",
       "item.fun_mods.rainboxingot": "Rainboxingot",
       "item.fun_mods.invisible_chestplate": "Invisible Body",
       "item.fun_mods.woodenspoon": "Woodenspoon",
@@ -787,6 +796,7 @@
       "item.fun_mods.butter": "Butter",
       "item.fun_mods.orbit_hoe": "Orbit Hoe",
       "item.fun_mods.orbitshovel": "Orbitshovel",
+      "item.fun_mods.orbitliquid_bucket": "Orbitliquid Bucket",
       "block.fun_mods.rocket_controller_tier_i": "Rocket Controller Tier 1",
       "item.minecraft.lingering_potion.effect.instant_health": "Lingering  Potion of Instant Hunger",
       "item.fun_mods.rawaqua": "Raw aqua",
@@ -808,6 +818,7 @@
       "item.minecraft.splash_potion.effect.instant_health": "Splash  Potion of Instant Hunger",
       "block.fun_mods.reddiamondore": "Red Diamond Ore",
       "block.fun_mods.saltore": "Salt Ore",
+      "fluid.orbitliquid": "Orbitliquid",
       "item.fun_mods.orbit_helmet": "Orbit Helmet"
     }
   },
