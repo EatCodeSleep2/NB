@@ -2,12 +2,12 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "obritore",
-    "textureTop": "obritore",
-    "textureLeft": "obritore",
-    "textureFront": "obritore",
-    "textureRight": "obritore",
-    "textureBack": "obritore",
+    "texture": "compironbock",
+    "textureTop": "iron_block",
+    "textureLeft": "iron_block",
+    "textureFront": "compironbock",
+    "textureRight": "compironbock",
+    "textureBack": "iron_block",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -32,16 +32,16 @@
         "subtract": false
       }
     ],
-    "name": "Orbit Ore",
+    "name": "Compact Iron",
     "specialInfo": [],
-    "hardness": 3.0,
-    "resistance": 8.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:FunMods"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -52,7 +52,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -72,11 +72,11 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "METAL"
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 4,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -101,18 +101,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:OrbitDim"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "CUSTOM:Orbitblock"
-      }
-    ],
-    "frequencyPerChunks": 1,
-    "frequencyOnChunk": 2,
-    "minGenerateHeight": 3,
-    "maxGenerateHeight": 256
+    "blocksToReplace": [],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }

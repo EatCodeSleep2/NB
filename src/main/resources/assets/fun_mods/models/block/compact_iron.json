@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fun_mods:blocks/compironbock",
+    "up": "fun_mods:blocks/iron_block",
+    "north": "fun_mods:blocks/compironbock",
+    "east": "fun_mods:blocks/iron_block",
+    "south": "fun_mods:blocks/iron_block",
+    "west": "fun_mods:blocks/compironbock",
+    "particle": "fun_mods:blocks/compironbock"
+  }
+}

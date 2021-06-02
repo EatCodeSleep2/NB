@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fun_mods:blocks/orbstone",
+    "up": "fun_mods:blocks/orbstone",
+    "north": "fun_mods:blocks/orbstone",
+    "east": "fun_mods:blocks/orbstone",
+    "south": "fun_mods:blocks/orbstone",
+    "west": "fun_mods:blocks/orbstone",
+    "particle": "fun_mods:blocks/orbstone"
+  }
+}

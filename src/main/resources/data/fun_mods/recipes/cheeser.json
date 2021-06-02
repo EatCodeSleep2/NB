@@ -7,17 +7,17 @@
   ],
   "key": {
     "1": {
-      "item": "fun_mods:butter"
+      "item": "fun_mods:deleted_mod_element"
     },
     "3": {
-      "item": "fun_mods:butter"
+      "item": "fun_mods:deleted_mod_element"
     },
     "5": {
-      "item": "fun_mods:butter"
+      "item": "fun_mods:deleted_mod_element"
     }
   },
   "result": {
-    "item": "fun_mods:cheese",
+    "item": "fun_mods:deleted_mod_element",
     "count": 1
   }
 }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "fun_mods:block/orbit_dirt"
+    },
+    "facing=east": {
+      "model": "fun_mods:block/orbit_dirt",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "fun_mods:block/orbit_dirt",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "fun_mods:block/orbit_dirt",
+      "y": 270
+    }
+  }
+}
