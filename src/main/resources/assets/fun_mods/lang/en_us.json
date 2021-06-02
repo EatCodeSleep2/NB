@@ -15,7 +15,6 @@
   "item.fun_mods.orbit_chestplate": "Orbit Body",
   "item.fun_mods.rawaqua": "Raw aqua",
   "item.fun_mods.doritos": "Doritos",
-  "item.fun_mods.beanseed": "Beanseed",
   "item.fun_mods.reddiamond": "Red Diamond",
   "enchantment.fun_mods.wither": "Wither",
   "effect.instant_health": " Potion of Instant Hunger",
@@ -37,6 +36,7 @@
   "item.fun_mods.invisible_boots": "Invisible Boots",
   "block.fun_mods.reddiamondore": "Red Diamond Ore",
   "item.fun_mods.rawbacon": "Raw bacon",
+  "block.fun_mods.saltore": "Salt Ore",
   "itemGroup.tabfun_mods": "Fun Mods",
   "item.fun_mods.orbit_boots": "Orbit Boots",
   "item.fun_mods.orbit_helmet": "Orbit Helmet"
