@@ -1,0 +1,36 @@
+{
+  "group": "fun_mods",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "fun_mods:compact_iron"
+    },
+    "3": {
+      "item": "minecraft:dirt"
+    },
+    "4": {
+      "item": "fun_mods:rocket_controller_tier_i"
+    },
+    "5": {
+      "item": "minecraft:dirt"
+    },
+    "6": {
+      "item": "fun_mods:rocket_booster_tier_i"
+    },
+    "7": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "8": {
+      "item": "fun_mods:rocket_booster_tier_i"
+    }
+  },
+  "result": {
+    "item": "fun_mods:rct_1_o",
+    "count": 1
+  }
+}

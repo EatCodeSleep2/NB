@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fun_mods:blocks/iron_block",
+    "up": "fun_mods:blocks/rct1s",
+    "north": "fun_mods:blocks/rct1f",
+    "east": "fun_mods:blocks/savannahleaves",
+    "south": "fun_mods:blocks/rct1ss",
+    "west": "fun_mods:blocks/rct1ss",
+    "particle": "fun_mods:blocks/iron_block"
+  }
+}
