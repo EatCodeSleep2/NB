@@ -34,7 +34,7 @@
     ],
     "name": "Red Diamond Ore",
     "specialInfo": [],
-    "hardness": 4.0,
+    "hardness": 5.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,

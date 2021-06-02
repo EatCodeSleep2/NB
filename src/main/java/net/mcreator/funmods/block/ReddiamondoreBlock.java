@@ -58,7 +58,7 @@ public class ReddiamondoreBlock extends FunModsModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(4f, 10f).setLightLevel(s -> 0));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(5f, 10f).setLightLevel(s -> 0));
 			setRegistryName("reddiamondore");
 		}
 

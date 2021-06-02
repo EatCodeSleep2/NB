@@ -560,6 +560,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "trash_block"
+    },
+    {
+      "name": "Orbitaxe",
+      "type": "tool",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbitaxe"
+    },
+    {
+      "name": "Orbitshovel",
+      "type": "tool",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbitshovel"
+    },
+    {
+      "name": "OrbitHoe",
+      "type": "tool",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orbit_hoe"
     }
   ],
   "variable_elements": [],
@@ -610,7 +637,6 @@
       "item.fun_mods.orbit_boots": "Orbit Boots",
       "item.fun_mods.orbit_helmet": "Orbit Helmet",
       "item.fun_mods.scubagear_chestplate": "Scubagear Body",
-      "block.fun_mods.trash_block": "Trash Block",
       "item.fun_mods.scubagear_leggings": "Scubagear Leggings"
     }
   },

@@ -34,7 +34,7 @@
     ],
     "name": "Orbit Ore",
     "specialInfo": [],
-    "hardness": 4.0,
+    "hardness": 6.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
