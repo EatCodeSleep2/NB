@@ -30,12 +30,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.funmods.itemgroup.FunModsItemGroup;
-import net.mcreator.funmods.item.RaworbitItem;
 import net.mcreator.funmods.FunModsModElements;
 
 import java.util.Random;
@@ -59,7 +57,7 @@ public class OrbitoreBlock extends FunModsModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(6f, 10f).setLightLevel(s -> 0).harvestLevel(4)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(3f, 8f).setLightLevel(s -> 0).harvestLevel(4)
 					.harvestTool(ToolType.PICKAXE).setRequiresTool());
 			setRegistryName("orbitore");
 		}
@@ -69,7 +67,7 @@ public class OrbitoreBlock extends FunModsModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(RaworbitItem.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
 	private static Feature<OreFeatureConfig> feature = null;
@@ -80,9 +78,7 @@ public class OrbitoreBlock extends FunModsModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
-				blockCriteria = true;
-			if (blockAt.getBlock() == Blocks.ANDESITE.getDefaultState().getBlock())
+			if (blockAt.getBlock() == OrbitblockBlock.block.getDefaultState().getBlock())
 				blockCriteria = true;
 			return blockCriteria;
 		}

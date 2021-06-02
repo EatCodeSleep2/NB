@@ -1,12 +1,20 @@
 
 package net.mcreator.funmods.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.ShovelItem;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+
+import net.mcreator.funmods.FunModsModElements;
+
 @FunModsModElements.ModElement.Tag
 public class OrbitshovelItem extends FunModsModElements.ModElement {
-
 	@ObjectHolder("fun_mods:orbitshovel")
 	public static final Item block = null;
-
 	public OrbitshovelItem(FunModsModElements instance) {
 		super(instance, 54);
 	}
@@ -38,8 +46,6 @@ public class OrbitshovelItem extends FunModsModElements.ModElement {
 				return Ingredient.EMPTY;
 			}
 		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
-
 		}.setRegistryName("orbitshovel"));
 	}
-
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fun_mods:blocks/block_16x16",
+    "up": "fun_mods:blocks/block_16x16",
+    "north": "fun_mods:blocks/block_16x16",
+    "east": "fun_mods:blocks/block_16x16",
+    "south": "fun_mods:blocks/block_16x16",
+    "west": "fun_mods:blocks/block_16x16",
+    "particle": "fun_mods:blocks/block_16x16"
+  }
+}

@@ -2,15 +2,15 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "obritore",
-    "textureTop": "obritore",
-    "textureLeft": "obritore",
-    "textureFront": "obritore",
-    "textureRight": "obritore",
-    "textureBack": "obritore",
+    "texture": "orbstone",
+    "textureTop": "orbstone",
+    "textureLeft": "orbstone",
+    "textureFront": "orbstone",
+    "textureRight": "orbstone",
+    "textureBack": "orbstone",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -32,10 +32,10 @@
         "subtract": false
       }
     ],
-    "name": "Orbit Ore",
+    "name": "Orbit Stone",
     "specialInfo": [],
     "hardness": 3.0,
-    "resistance": 8.0,
+    "resistance": 5.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -76,7 +76,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 4,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -101,18 +101,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:OrbitDim"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "CUSTOM:Orbitblock"
-      }
-    ],
-    "frequencyPerChunks": 1,
-    "frequencyOnChunk": 2,
-    "minGenerateHeight": 3,
-    "maxGenerateHeight": 256
+    "blocksToReplace": [],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }
