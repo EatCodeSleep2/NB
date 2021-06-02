@@ -26,8 +26,8 @@
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
-    "guiBoundTo": "<NONE>",
-    "inventorySize": 24,
+    "guiBoundTo": "BackpackLow",
+    "inventorySize": 27,
     "inventoryStackSize": 64
   }
 }
