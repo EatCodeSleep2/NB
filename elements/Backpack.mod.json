@@ -27,7 +27,7 @@
     "specialInfo": [],
     "hasGlow": false,
     "guiBoundTo": "BackpackLow",
-    "inventorySize": 24,
+    "inventorySize": 26,
     "inventoryStackSize": 64
   }
 }

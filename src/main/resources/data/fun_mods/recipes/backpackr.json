@@ -1,0 +1,42 @@
+{
+  "group": "fun_mods",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:leather"
+    },
+    "1": {
+      "item": "minecraft:string"
+    },
+    "2": {
+      "item": "minecraft:leather"
+    },
+    "3": {
+      "item": "minecraft:leather"
+    },
+    "4": {
+      "item": "minecraft:string"
+    },
+    "5": {
+      "item": "minecraft:leather"
+    },
+    "6": {
+      "item": "minecraft:leather"
+    },
+    "7": {
+      "item": "minecraft:chest"
+    },
+    "8": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "fun_mods:backpack",
+    "count": 1
+  }
+}
