@@ -1,0 +1,37 @@
+{
+  "group": "fun_mods",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fun_mods:plastic"
+    },
+    {
+      "item": "fun_mods:plastic"
+    },
+    {
+      "item": "fun_mods:plastic"
+    },
+    {
+      "item": "fun_mods:plastic"
+    },
+    {
+      "item": "fun_mods:plastic"
+    },
+    {
+      "item": "fun_mods:plastic"
+    },
+    {
+      "item": "fun_mods:plastic"
+    },
+    {
+      "item": "fun_mods:plastic"
+    },
+    {
+      "item": "fun_mods:plastic"
+    }
+  ],
+  "result": {
+    "item": "fun_mods:white_plastic_block",
+    "count": 1
+  }
+}

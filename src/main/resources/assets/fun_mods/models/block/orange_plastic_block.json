@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "fun_mods:blocks/orangeplastic",
+    "particle": "fun_mods:blocks/orangeplastic"
+  }
+}

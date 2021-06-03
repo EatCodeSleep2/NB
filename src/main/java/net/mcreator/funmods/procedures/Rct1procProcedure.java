@@ -17,6 +17,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.funmods.block.RocketBoosterTierIBlock;
+import net.mcreator.funmods.block.CompactIronBlock;
 import net.mcreator.funmods.FunModsModElements;
 import net.mcreator.funmods.FunModsMod;
 
@@ -63,7 +64,7 @@ public class Rct1procProcedure extends FunModsModElements.ModElement {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
-		if (((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)))).getBlock() == RocketBoosterTierIBlock.block
+		if ((((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)))).getBlock() == RocketBoosterTierIBlock.block
 				.getDefaultState().getBlock())
 				&& ((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + (-1))))).getBlock() == RocketBoosterTierIBlock.block
 						.getDefaultState().getBlock()))
@@ -90,8 +91,17 @@ public class Rct1procProcedure extends FunModsModElements.ModElement {
 																				.getBlock() == Blocks.IRON_BLOCK.getDefaultState().getBlock()))
 																&& ((world
 																		.getBlockState(new BlockPos((int) (x + 1), (int) (1 + y), (int) (z + (-1)))))
-																				.getBlock() == Blocks.IRON_BLOCK.getDefaultState()
-																						.getBlock()))))))))) {
+																				.getBlock() == Blocks.IRON_BLOCK.getDefaultState().getBlock()))))))))
+				|| ((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)))).getBlock() == RocketBoosterTierIBlock.block
+						.getDefaultState().getBlock())
+						&& ((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + (-1))))).getBlock() == RocketBoosterTierIBlock.block
+								.getDefaultState().getBlock()))
+						&& ((((world.getBlockState(new BlockPos((int) (x + (-1)), (int) y, (int) (z + 1))))
+								.getBlock() == RocketBoosterTierIBlock.block.getDefaultState().getBlock())
+								&& ((world.getBlockState(new BlockPos((int) (x + (-1)), (int) y, (int) (z + (-1)))))
+										.getBlock() == RocketBoosterTierIBlock.block.getDefaultState().getBlock()))
+								&& ((world.getBlockState(new BlockPos((int) (x + 0), (int) (1 + y), (int) (z + 0))))
+										.getBlock() == CompactIronBlock.block.getDefaultState().getBlock()))))) {
 			{
 				Entity _ent = entity;
 				if (!_ent.world.isRemote && _ent instanceof ServerPlayerEntity) {

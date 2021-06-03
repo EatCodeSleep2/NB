@@ -101,7 +101,7 @@ public class RCT1OBlock extends FunModsModElements.ModElement {
 				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
 					@Override
 					public ITextComponent getDisplayName() {
-						return new StringTextComponent("Rocket Controller  OVERWORLD");
+						return new StringTextComponent("Overworld Rocket");
 					}
 
 					@Override

@@ -432,6 +432,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -802,9 +806,178 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
+    },
+    {
+      "name": "Lightsaber",
+      "type": "tool",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lightsaber"
+    },
+    {
+      "name": "CompIr",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "comp_ir"
+    },
+    {
+      "name": "CJ",
+      "type": "mob",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cj"
+    },
+    {
+      "name": "Plastic",
+      "type": "item",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plastic"
+    },
+    {
+      "name": "WhitePlasticBlock",
+      "type": "block",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "white_plastic_block"
+    },
+    {
+      "name": "RedPlasticBlock",
+      "type": "block",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_plastic_block"
+    },
+    {
+      "name": "OrangePlasticBlock",
+      "type": "block",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orange_plastic_block"
+    },
+    {
+      "name": "YellowPlasticBlock",
+      "type": "block",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yellow_plastic_block"
+    },
+    {
+      "name": "GreenPlasticBlock",
+      "type": "block",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "green_plastic_block"
+    },
+    {
+      "name": "BluePlasticBlock",
+      "type": "block",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_plastic_block"
+    },
+    {
+      "name": "PurplePlasticBlock",
+      "type": "block",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_plastic_block"
+    },
+    {
+      "name": "PinkPlasticBlock",
+      "type": "block",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pink_plastic_block"
+    },
+    {
+      "name": "Plblrec",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plblrec"
+    },
+    {
+      "name": "Redpl",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redpl"
+    },
+    {
+      "name": "Orangepl",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orangepl"
+    },
+    {
+      "name": "Dump",
+      "type": "biome",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dump"
+    },
+    {
+      "name": "Irondump",
+      "type": "block",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "irondump"
     }
   ],
   "variable_elements": [],
@@ -814,17 +987,21 @@
       "item.fun_mods.greendiamond": "Green Diamond",
       "item.fun_mods.bacon": "Bacon",
       "block.fun_mods.orbit_stone": "Orbit Stone",
-      "block.fun_mods.rct_1_o": "Rocket Controller  OVERWORLD",
-      "block.fun_mods.orbitblock": "Block of Orbit",
+      "block.fun_mods.rct_1_o": "Overworld Rocket",
       "block.fun_mods.glasstrabdoor": "Glass trabdoor",
+      "block.fun_mods.orbitblock": "Block of Orbit",
       "item.fun_mods.invisible_helmet": "Invisible Helmet",
+      "block.fun_mods.blue_plastic_block": "White Plastic Block",
+      "block.fun_mods.pink_plastic_block": "White Plastic Block",
       "block.fun_mods.orbit_dirt": "Orbit Dirt",
       "block.fun_mods.aquaore": "Aqua Ore",
       "item.fun_mods.pear": "Pear",
       "item.fun_mods.orbit_chestplate": "Orbit Body",
       "item.fun_mods.cheese": "Cheese",
-      "item.fun_mods.orbit_dim": "Orbit Dim Portal Igniter",
+      "item.fun_mods.plastic": "Plastic",
+      "block.fun_mods.green_plastic_block": "White Plastic Block",
       "enchantment.fun_mods.wither": "Wither",
+      "item.fun_mods.orbit_dim": "Orbit Dim Portal Igniter",
       "item.fun_mods.rainboxingot": "Rainboxingot",
       "item.fun_mods.invisible_chestplate": "Invisible Body",
       "item.fun_mods.woodenspoon": "Woodenspoon",
@@ -835,9 +1012,11 @@
       "item.fun_mods.invisible_leggings": "Invisible Leggings",
       "biome.fun_mods.orbit_biom": "Orbit Biome",
       "item.fun_mods.invisible_boots": "Invisible Boots",
+      "entity.fun_mods.cj": "CJ",
       "item.fun_mods.rawbacon": "Raw bacon",
       "itemGroup.tabfun_mods": "Fun Mods",
       "item.fun_mods.orbit_boots": "Orbit Boots",
+      "block.fun_mods.yellow_plastic_block": "White Plastic Block",
       "item.fun_mods.scubagear_chestplate": "Scubagear Body",
       "block.fun_mods.trash_block": "Trash Block",
       "item.fun_mods.scubagear_leggings": "Scubagear Leggings",
@@ -845,19 +1024,25 @@
       "item.fun_mods.orbitaxe": "Orbitaxe",
       "item.fun_mods.aquaingot": "Aqua ingot",
       "item.fun_mods.orbit_leggings": "Orbit Leggings",
+      "item.fun_mods.cj_spawn_egg": "CJ Spawn Egg",
       "item.minecraft.tipped_arrow.effect.instant_health": "Arrow of  Potion of Instant Hunger",
       "item.fun_mods.scubagear_boots": "Scubagear Boots",
+      "block.fun_mods.white_plastic_block": "White Plastic Block",
       "item.fun_mods.butter": "Butter",
       "item.fun_mods.orbit_hoe": "Orbit Hoe",
       "item.fun_mods.orbitshovel": "Orbitshovel",
       "item.fun_mods.orbitliquid_bucket": "Orbitliquid Bucket",
       "block.fun_mods.rocket_controller_tier_i": "Rocket Controller Tier 1",
+      "biome.fun_mods.dump": "Dump",
       "item.minecraft.lingering_potion.effect.instant_health": "Lingering  Potion of Instant Hunger",
       "item.fun_mods.rawaqua": "Raw aqua",
       "item.fun_mods.doritos": "Doritos",
       "item.fun_mods.scubagear_helmet": "Scubagear Helmet",
+      "block.fun_mods.red_plastic_block": "White Plastic Block",
+      "block.fun_mods.orange_plastic_block": "White Plastic Block",
       "item.fun_mods.reddiamond": "Red Diamond",
       "item.fun_mods.backpack": "Backpack",
+      "block.fun_mods.irondump": "Irondump",
       "biome.fun_mods.snowny_jungle": "Snowny Jungle",
       "effect.instant_health": " Potion of Instant Hunger",
       "biome.fun_mods.savannahdesert": "Savannahdesert",
@@ -869,11 +1054,13 @@
       "block.fun_mods.rocket_booster_tier_i": "Rocket Booster Tier 1",
       "block.fun_mods.orbitore": "Orbit Ore",
       "item.fun_mods.orbitsword": "Orbit Sword",
+      "block.fun_mods.purple_plastic_block": "White Plastic Block",
       "item.minecraft.splash_potion.effect.instant_health": "Splash  Potion of Instant Hunger",
       "block.fun_mods.reddiamondore": "Red Diamond Ore",
       "block.fun_mods.saltore": "Salt Ore",
       "fluid.orbitliquid": "Orbitliquid",
-      "item.fun_mods.orbit_helmet": "Orbit Helmet"
+      "item.fun_mods.orbit_helmet": "Orbit Helmet",
+      "item.fun_mods.lightsaber": "Lightsaber"
     }
   },
   "foldersRoot": {

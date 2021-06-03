@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "red.svg",
+        "1": "solid_black_1"
+      },
+      "name": "default"
+    },
+    "light": {
+      "map": {
+        "0": "red.svg",
+        "1": "solid_black_1"
+      },
+      "name": "light"
+    }
+  }
+}

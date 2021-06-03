@@ -1,0 +1,8 @@
+{
+  "parent": "fun_mods:custom/light",
+  "textures": {
+    "0": "fun_mods:blocks/red.svg",
+    "1": "fun_mods:blocks/solid_black_1",
+    "particle": "fun_mods:items/lightsab"
+  }
+}

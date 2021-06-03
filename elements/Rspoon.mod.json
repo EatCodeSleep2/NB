@@ -7,7 +7,7 @@
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       {
         "value": ""
@@ -19,10 +19,10 @@
         "value": ""
       },
       {
-        "value": ""
+        "value": "Items.BOWL"
       },
       {
-        "value": "Items.BOWL"
+        "value": ""
       },
       {
         "value": ""
