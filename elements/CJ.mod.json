@@ -77,7 +77,7 @@
     "immuneToWither": true,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "CUSTOM:Lightsaber"
+      "value": "CUSTOM:Doritopet"
     },
     "livingSound": {
       "value": ""

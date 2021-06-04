@@ -34,8 +34,9 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
 
-import net.mcreator.funmods.item.LightsaberItem;
 import net.mcreator.funmods.item.LightsaberCrystalItem;
+import net.mcreator.funmods.item.LightsaberItem;
+import net.mcreator.funmods.item.DoritopetItem;
 import net.mcreator.funmods.entity.renderer.CJRenderer;
 import net.mcreator.funmods.FunModsModElements;
 
@@ -65,8 +66,8 @@ public class CJEntity extends FunModsModElements.ModElement {
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
 			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
-			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 10);
-			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
+			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 100);
+			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 10);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
 			event.put(entity, ammma.create());
 		}
@@ -112,8 +113,9 @@ public class CJEntity extends FunModsModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(LightsaberItem.block, (int) (1)));
-			this.entityDropItem(new ItemStack(LightsaberCrystalItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(DoritopetItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(LightsaberCrystalItem.block, (int) (2)));
+
 		}
 
 		@Override
