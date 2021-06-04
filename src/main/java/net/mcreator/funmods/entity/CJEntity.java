@@ -35,6 +35,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
 
 import net.mcreator.funmods.item.LightsaberItem;
+import net.mcreator.funmods.item.LightsaberCrystalItem;
 import net.mcreator.funmods.entity.renderer.CJRenderer;
 import net.mcreator.funmods.FunModsModElements;
 
@@ -112,6 +113,7 @@ public class CJEntity extends FunModsModElements.ModElement {
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
 			this.entityDropItem(new ItemStack(LightsaberItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(LightsaberCrystalItem.block, (int) (1)));
 		}
 
 		@Override
