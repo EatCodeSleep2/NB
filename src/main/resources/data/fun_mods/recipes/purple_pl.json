@@ -1,0 +1,16 @@
+{
+  "group": "fun_mods",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:purple_dye"
+    },
+    {
+      "item": "fun_mods:white_plastic_block"
+    }
+  ],
+  "result": {
+    "item": "fun_mods:purple_plastic_block",
+    "count": 1
+  }
+}

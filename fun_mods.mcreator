@@ -987,6 +987,51 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "lightsaber_crystal"
+    },
+    {
+      "name": "Yellopl",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yellopl"
+    },
+    {
+      "name": "GreenPL",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "green_pl"
+    },
+    {
+      "name": "BluePL",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_pl"
+    },
+    {
+      "name": "PurplePL",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_pl"
+    },
+    {
+      "name": "PinkPL",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pink_pl"
     }
   ],
   "variable_elements": [],
@@ -997,8 +1042,8 @@
       "item.fun_mods.bacon": "Bacon",
       "block.fun_mods.orbit_stone": "Orbit Stone",
       "block.fun_mods.rct_1_o": "Overworld Rocket",
-      "block.fun_mods.orbitblock": "Block of Orbit",
       "block.fun_mods.glasstrabdoor": "Glass trabdoor",
+      "block.fun_mods.orbitblock": "Block of Orbit",
       "item.fun_mods.invisible_helmet": "Invisible Helmet",
       "block.fun_mods.blue_plastic_block": "White Plastic Block",
       "block.fun_mods.pink_plastic_block": "White Plastic Block",
