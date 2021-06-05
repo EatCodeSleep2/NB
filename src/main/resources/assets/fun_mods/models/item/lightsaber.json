@@ -1,7 +1,7 @@
 {
-  "parent": "fun_mods:custom/light",
+  "parent": "fun_mods:custom/light2",
   "textures": {
-    "0": "fun_mods:blocks/red.svg",
+    "0": "fun_mods:blocks/redplastic",
     "1": "fun_mods:blocks/solid_black_1",
     "particle": "fun_mods:items/lightsab"
   }

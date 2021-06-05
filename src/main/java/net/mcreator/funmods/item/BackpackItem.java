@@ -159,7 +159,7 @@ public class BackpackItem extends FunModsModElements.ModElement {
 		}
 
 		private ItemStackHandler createItemHandler() {
-			return new ItemStackHandler(27) {
+			return new ItemStackHandler(28) {
 				@Override
 				public int getSlotLimit(int slot) {
 					return 64;
