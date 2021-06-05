@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 1,
     "texture": "lightsab",
-    "customModelName": "light:default",
+    "customModelName": "light2:default",
     "name": "Lightsaber",
     "specialInfo": [],
     "creativeTab": {
