@@ -10,7 +10,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Orbitignot"
+        "value": "CUSTOM:Doritos"
       },
       {
         "value": "Items.BOW"
@@ -19,16 +19,16 @@
         "value": "CUSTOM:Doritos"
       },
       {
-        "value": "CUSTOM:Orbitignot"
+        "value": "CUSTOM:Doritos"
       },
       {
         "value": "Items.BOW"
       },
       {
-        "value": "CUSTOM:Doritos"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": "CUSTOM:Orbitignot"
+        "value": "CUSTOM:Doritos"
       },
       {
         "value": "Items.BOW"

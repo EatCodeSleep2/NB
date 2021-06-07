@@ -1,0 +1,9 @@
+{
+  "parent": "fun_mods:custom/chair",
+  "textures": {
+    "all": "fun_mods:blocks/darkoakside",
+    "particle": "fun_mods:blocks/darkoakside",
+    "0": "fun_mods:blocks/darkoakside",
+    "1": "fun_mods:blocks/planks_oak"
+  }
+}

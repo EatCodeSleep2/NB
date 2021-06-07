@@ -2,11 +2,11 @@
   "_fv": 18,
   "_type": "loottable",
   "definition": {
-    "type": "Generic",
+    "type": "Block",
     "pools": [
       {
         "minrolls": 1,
-        "maxrolls": 3,
+        "maxrolls": 1,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,
         "hasbonusrolls": false,
@@ -16,19 +16,33 @@
             "item": {
               "value": "CUSTOM:Pear"
             },
-            "weight": 1,
+            "weight": 25,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": true,
+            "explosionDecay": false,
+            "silkTouchMode": 2
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Savannahleaves"
+            },
+            "weight": 100,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
             "explosionDecay": false,
-            "silkTouchMode": 0
+            "silkTouchMode": 1
           }
         ]
       }
     ],
-    "name": "pear_drop",
+    "name": "savannahleaves",
     "namespace": "mod"
   }
 }

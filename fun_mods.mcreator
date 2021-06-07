@@ -320,15 +320,6 @@
       "registry_name": "rainbowsword"
     },
     {
-      "name": "PearDrop",
-      "type": "loottable",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pear_drop"
-    },
-    {
       "name": "ScubagearBodyTickEvent",
       "type": "procedure",
       "sortid": 37,
@@ -1032,6 +1023,72 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "pink_pl"
+    },
+    {
+      "name": "TallForest",
+      "type": "biome",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tall_forest"
+    },
+    {
+      "name": "Chair",
+      "type": "block",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chair"
+    },
+    {
+      "name": "Sit",
+      "type": "mob",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sit"
+    },
+    {
+      "name": "ChairOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chair_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Woa",
+      "type": "achievement",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "woa"
+    },
+    {
+      "name": "Savannahleavesdrop",
+      "type": "loottable",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "savannahleavesdrop"
     }
   ],
   "variable_elements": [],
@@ -1042,8 +1099,9 @@
       "item.fun_mods.bacon": "Bacon",
       "block.fun_mods.orbit_stone": "Orbit Stone",
       "block.fun_mods.rct_1_o": "Overworld Rocket",
-      "block.fun_mods.glasstrabdoor": "Glass trabdoor",
       "block.fun_mods.orbitblock": "Block of Orbit",
+      "block.fun_mods.glasstrabdoor": "Glass trabdoor",
+      "entity.fun_mods.sit": "Sit",
       "item.fun_mods.invisible_helmet": "Invisible Helmet",
       "block.fun_mods.blue_plastic_block": "White Plastic Block",
       "block.fun_mods.pink_plastic_block": "White Plastic Block",
@@ -1054,6 +1112,7 @@
       "item.fun_mods.cheese": "Cheese",
       "item.fun_mods.plastic": "Plastic",
       "block.fun_mods.green_plastic_block": "White Plastic Block",
+      "block.fun_mods.chair": "Chair",
       "enchantment.fun_mods.wither": "Wither",
       "item.fun_mods.orbit_dim": "Orbit Dim Portal Igniter",
       "item.fun_mods.rainboxingot": "Rainboxingot",
@@ -1069,17 +1128,19 @@
       "item.fun_mods.invisible_boots": "Invisible Boots",
       "entity.fun_mods.cj": "CJ",
       "item.fun_mods.rawbacon": "Raw bacon",
-      "itemGroup.tabfun_mods": "Fun Mods",
+      "itemGroup.tabfun_mods": "Adventury Craft",
       "item.fun_mods.orbit_boots": "Orbit Boots",
       "block.fun_mods.yellow_plastic_block": "White Plastic Block",
       "item.fun_mods.scubagear_chestplate": "Scubagear Body",
       "block.fun_mods.trash_block": "Trash Block",
       "item.fun_mods.scubagear_leggings": "Scubagear Leggings",
+      "item.fun_mods.sit_spawn_egg": "Sit Spawn Egg",
       "item.minecraft.potion.effect.instant_health": " Potion of Instant Hunger",
       "item.fun_mods.orbitaxe": "Orbitaxe",
       "item.fun_mods.aquaingot": "Aqua ingot",
       "item.fun_mods.orbit_leggings": "Orbit Leggings",
       "item.fun_mods.cj_spawn_egg": "CJ Spawn Egg",
+      "advancements.woa.descr": "All you need to do is explore!",
       "item.minecraft.tipped_arrow.effect.instant_health": "Arrow of  Potion of Instant Hunger",
       "item.fun_mods.scubagear_boots": "Scubagear Boots",
       "block.fun_mods.white_plastic_block": "White Plastic Block",
@@ -1108,9 +1169,11 @@
       "item.fun_mods.orbitignot": "Orbit Ingot",
       "block.fun_mods.rocket_booster_tier_i": "Rocket Booster Tier 1",
       "block.fun_mods.orbitore": "Orbit Ore",
+      "biome.fun_mods.tall_forest": "Tall Forest",
       "item.fun_mods.orbitsword": "Orbit Sword",
       "block.fun_mods.purple_plastic_block": "White Plastic Block",
       "item.minecraft.splash_potion.effect.instant_health": "Splash  Potion of Instant Hunger",
+      "advancements.woa.title": "Welcome to a world full of Adventures!",
       "block.fun_mods.reddiamondore": "Red Diamond Ore",
       "block.fun_mods.saltore": "Salt Ore",
       "fluid.orbitliquid": "Orbitliquid",

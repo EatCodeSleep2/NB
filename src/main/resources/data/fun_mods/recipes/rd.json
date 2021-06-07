@@ -8,7 +8,7 @@
   ],
   "key": {
     "0": {
-      "item": "fun_mods:orbitignot"
+      "item": "fun_mods:doritos"
     },
     "1": {
       "item": "minecraft:bow"
@@ -17,16 +17,16 @@
       "item": "fun_mods:doritos"
     },
     "3": {
-      "item": "fun_mods:orbitignot"
+      "item": "fun_mods:doritos"
     },
     "4": {
       "item": "minecraft:bow"
     },
     "5": {
-      "item": "fun_mods:doritos"
+      "item": "minecraft:diamond"
     },
     "6": {
-      "item": "fun_mods:orbitignot"
+      "item": "fun_mods:doritos"
     },
     "7": {
       "item": "minecraft:bow"
@@ -36,7 +36,7 @@
     }
   },
   "result": {
-    "item": "fun_mods:deleted_mod_element",
+    "item": "fun_mods:doritopet",
     "count": 1
   }
 }

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "darkoakside",
+        "1": "planks_oak"
+      },
+      "name": "default"
+    }
+  }
+}
